@@ -6,7 +6,7 @@
             <field name="location" type="text" label="Location" filter="string" class="form-control" admintable="true" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
             <field name="ticket" type="url" label="Ticket Link" filter="url" class="form-control" />
-            <field name="result" type="radio" default="" label="Result" description="">
+            <field name="result" type="list" default="" label="Result" description="">
                 <option value=""></option>
                 <option value="w">Won</option>
                 <option value="l">Lost</option>
