@@ -17,11 +17,8 @@ layout: default
       <span class="text-lg">14th - 20th September, 2015</span>
     </div>
   </div>
-  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date') %}
-  {% include module module="gallery" class="grey" title="Events" items=events %} 
-  
-  {% assign areas = (site.areas | where: 'published', 1 | sort: 'order') %}
-  {% include module module="gallery" class="red bg-pattern-1" title="Areas" items=areas %}
+  {% assign fights = (site.fights | where: 'parent', nil | where: 'published', 1 | sort: 'date') %}
+  {% include module module="gallery" class="grey" title="Fights" items=fights %} 
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
   {% include module module="sponsors" title="Sponsors" items=sponsors %}
