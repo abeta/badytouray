@@ -2,6 +2,7 @@
 <form>
     <fields>
         <fieldset name="options">
+            <field name="youtube" type="url" label="YouTube Link" filter="string" class="form-control" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
         </fieldset>
     </fields>
