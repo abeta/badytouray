@@ -10,6 +10,7 @@
                 <option value=""></option>
                 <option value="w">Won</option>
                 <option value="l">Lost</option>
+                <option value="d">Draw</option>
             </field>
         </fieldset>
         <fieldset name="extra" title="Event Details">
