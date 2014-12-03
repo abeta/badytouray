@@ -16,5 +16,4 @@ layout: default
   </div>
 </div>
 {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
-{% include module module="gallery" items=fights %} 
-{% endif %}
+{% include module module="gallery" items=fights %}
