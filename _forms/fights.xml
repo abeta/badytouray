@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+        <fieldset name="options">
+            <field name="date" type="datetime" label="Date" filter="date" class="form-control" admintable="true" />
+            <field name="location" type="text" label="Location" filter="string" class="form-control" admintable="true" />
+            <field name="image" type="media" label="Image" filter="string" class="form-control" />
+            <field name="ticket" type="url" label="Ticket Link" filter="url" class="form-control" />
+            <field name="result" type="radio" default="0" label="Result" description="">
+                <option value=""></option>
+                <option value="w">Won</option>
+                <option value="l">Lost</option>
+            </field>
+        </fieldset>
+        <fieldset name="extra" title="Event Details">
+        </fieldset>
+    </fields>
+</form>
