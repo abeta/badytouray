@@ -20,9 +20,8 @@ profiles:
     provider:
         - facebook
         - twitter
-        - pinterest
-    facebook: 'https://facebook.com/brightonjapanfestival'
-    twitter: 'https://twitter.com/brightonjapan15'
+    facebook: 'https://facebook.com/BadyTouray'
+    twitter: 'https://twitter.com/BadyTouray'
     pinterest: 'https://pinterest.com/brightonjapan'
 defaults:
     -
