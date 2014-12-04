@@ -15,5 +15,19 @@ layout: default
     {{ content }}
   </div>
 </div>
+
 {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
-{% include module module="gallery" items=fights %}
+<section id="cd-timeline" class="cd-container">
+{% for item in fights %}
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+      <span class="fa fa-trophy"></span>
+    </div>
+    <div class="cd-timeline-content">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.content }}</p>
+      <span class="cd-date">{{ item.date }}</span>
+    </div>
+  </div>
+{% endfor %}
+</section>
