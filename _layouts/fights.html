@@ -15,16 +15,16 @@ layout: default
     {{ content }}
     
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
-    <div id="cd-timeline" class="cd-container">
+    <div id="timeline" class="container">
     {% for item in fights %}
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-result-{{ item.result }}">
+      <div class="timeline-block">
+        <div class="timeline-img result-{{ item.result }}">
           <span class="fa fa-trophy"></span>
         </div>
-        <div class="cd-timeline-content">
+        <div class="timeline-content">
           <h2>{{ item.title }}</h2>
           <p>{{ item.content }}</p>
-          <span class="cd-date">{{ item.date }}</span>
+          <span class="date">{{ item.date }}</span>
         </div>
       </div>
     {% endfor %}
