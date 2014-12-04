@@ -36,18 +36,6 @@ defaults:
             type: pages
         values:
             layout: page
-    -
-        scope:
-            path: ''
-            type: areas
-        values:
-            layout: area
-    -
-        scope:
-            path: ''
-            type: events
-        values:
-            layout: event
 collections:
     content:
         title: Pages
@@ -57,11 +45,9 @@ collections:
     fights:
         title: Fights
         icon: trophy
-        output: true
     videos:
         title: Videos
         icon: video-camera
-        output: true
     sponsors:
         title: Sponsors
         icon: money
@@ -70,11 +56,10 @@ facebook_gallery:
         - 'Timeline Photos'
         - 'Cover Photos'
         - 'Profile Pictures'
-        - Photos
-description: 'Brighton Japan Festival '
+description: 'Bady "Terminator" Touray'
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
     provider: '1'
-v: 4a
+v: 5
 baseurl: /
