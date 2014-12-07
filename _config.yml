@@ -20,9 +20,11 @@ profiles:
     provider:
         - facebook
         - twitter
+        - google
     facebook: 'https://facebook.com/BadyTouray'
     twitter: 'https://twitter.com/BadyTouray'
     pinterest: 'https://pinterest.com/brightonjapan'
+    google: 'https://plus.google.com/117487081810569331153'
 defaults:
     -
         scope:
