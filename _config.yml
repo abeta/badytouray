@@ -1,4 +1,4 @@
-title: 'Brighton Japan Festival'
+title: 'Bady "Terminator" Touray'
 permalink: none
 url: 'http://beta.abemedia.co.uk/badytouray'
 timezone: Europe/London
@@ -40,9 +40,6 @@ collections:
     content:
         output: true
         permalink: ':path.html'
-    fights:
-    videos:
-    sponsors:
 facebook_gallery:
     exclude:
         - 'Timeline Photos'
