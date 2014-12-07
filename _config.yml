@@ -38,19 +38,11 @@ defaults:
             layout: page
 collections:
     content:
-        title: Pages
-        icon: sitemap
         output: true
         permalink: ':path.html'
     fights:
-        title: Fights
-        icon: trophy
     videos:
-        title: Videos
-        icon: video-camera
     sponsors:
-        title: Sponsors
-        icon: money
 facebook_gallery:
     exclude:
         - 'Timeline Photos'
