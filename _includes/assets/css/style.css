@@ -123,7 +123,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
         padding: 10px 0;
-        border-top: 20px solid #000;
         height: 300px;
     }
     .navbar .nav {
