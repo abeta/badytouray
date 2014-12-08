@@ -24,7 +24,7 @@ layout: default
         <div class="timeline-content">
           <h3><span><b>Bady</b> versus</span>{{ item.title }}</h3>
           <p>{{ item.content }}</p>
-          <span class="date">{{ item.date }}</span>
+          <span class="date">{{ item.date | date: '%d %B %Y' }}</span>
         </div>
       </div>
     {% endfor %}
