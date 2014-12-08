@@ -126,8 +126,16 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         right: 50%;
         margin-right: 120px;
     }
-    .navbar .nav-right {
-        left: 50%;
+    .navbar .nav-left {
+        right: 50%;
+        margin-right: 120px;
+    }
+    .navbar.affix .nav-right {
+        top: 15px;
+        margin-left: 120px;
+    }
+    .navbar.affix .nav-right {
+        top: 15px;
         margin-left: 120px;
     }
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
