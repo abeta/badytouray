@@ -17,6 +17,12 @@
     font-size: 17px;
     display: block;
 }
+#timeline img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 #timeline::before {
     /* this is the vertical line */
     content: '';
