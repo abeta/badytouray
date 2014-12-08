@@ -299,7 +299,6 @@ a.thumb, a.thumb:hover {
     -ms-transform: scale(1.2) rotate(-3deg);
     transform: scale(1.2) rotate(-3deg);
     filter: alpha(opacity=50);
-    opacity: .5;
 }
 .thumb figure>.label {
     position:absolute;
