@@ -1,3 +1,16 @@
+function getUrlVars(url) {
+    var vars = {};
+    var parts = url.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+$(function() {
+	$('#home').tubular({ videoId: $('#home').data('video') });
+});
+
+
 // smooth scroll to anchor
 $(function() {
   $('a[href*=#]:not([href=#],.carousel-control)').click(function() {
