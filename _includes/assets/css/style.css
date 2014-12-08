@@ -546,3 +546,7 @@ body .don-share {
 .nav-stumbleupon a {
     background-color: #eb4924;
 }
+
+#tubular-container {
+    position: absolute !important;
+}
