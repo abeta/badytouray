@@ -1,7 +1,7 @@
   <div class="row equal">
     {% capture i %}0{% endcapture %}
     {% for item in include.params.items reversed %}
-    {% if i < '6' %}
+    {% if i < '3' %}
     {% capture i %}{{ i | plus: 1 }}{% endcapture %}
     <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}/fights.html#{{ item.slug }}" >
     <figure>
