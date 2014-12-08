@@ -59,7 +59,7 @@
         margin-top: -20%;
     }
     #timeline div:first-child + .timeline-block{
-        margin-top: 1em;
+        margin-top: 3em;
     }
     .timeline-block:last-child {
         margin-bottom: 0;
