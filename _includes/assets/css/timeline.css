@@ -6,11 +6,12 @@
 }
 #timeline h3 {
     font-size: 32px;
+    margin-top: 0;
 }
 #timeline h3 span {
     font-size: 12px;
     float: left;
-    margin-right: 10px;
+    margin: 5px 8px 0 0;
 }
 #timeline h3 b {
     font-size: 18px;
