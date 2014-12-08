@@ -376,13 +376,10 @@ a.thumb, a.thumb:hover {
 .grey {
     background-color: #f0f0f0;
 }
-.red {
-    background-color: #900;
-}
 .black {
     background-color: #161616;
 }
-.black, .red, .black *, .red *, .box * {
+.black, .black *, .box * {
     color: #fff;
 }
 .text-danger {
@@ -405,9 +402,6 @@ a.thumb, a.thumb:hover {
 }
 .box-white, .box-white * {
     color: #000;
-}
-.box-red:hover {
-    background: rgba(255,0,0,0.75);
 }
 a.box {
     display: inline-block;
@@ -519,7 +513,6 @@ a.box:hover {
 }
 h3.versus {
     font-size: 52px;
-    display: inline-block;
     color: #fff;
 }
 h3.versus span {
