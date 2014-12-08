@@ -42,6 +42,9 @@ collections:
     content:
         output: true
         permalink: ':path.html'
+    fights:
+    videos:
+    sponsors:
 facebook_gallery:
     exclude:
         - 'Timeline Photos'
