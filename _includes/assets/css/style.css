@@ -140,7 +140,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         left: 50%;
     }
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-        color: #06f !important;
+        color: #09f !important;
         background-color: transparent;
     }
     .navbar-inverse {
