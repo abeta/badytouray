@@ -7,8 +7,7 @@ layout: default
   <div class="container">
     {{ content }}
     <br>
-    {% assign items = (site.videos | where: 'published', 1 | sort: 'order') %}
-    {% include module module="videos" class="grey" title="Videos" limit="3" %} 
+    {% include module module="videos" class="grey" title="Videos" %} 
   </div>
 </div>
 
