@@ -17,12 +17,6 @@
     font-size: 17px;
     display: block;
 }
-#timeline img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
 #timeline::before {
     /* this is the vertical line */
     content: '';
@@ -182,6 +176,9 @@
     padding: 1em;
     box-shadow: 0 3px 0 #d7e4ed;
 }
+.timeline-content img {
+    margin: -1em;
+}
 .timeline-content:after {
     content: "";
     display: table;
@@ -202,6 +199,9 @@
         margin-left: 0;
         padding: 1.6em;
         width: 45%;
+    }
+    .timeline-content img {
+        margin: -1.6em;
     }
     .timeline-content::before {
         top: 24px;
