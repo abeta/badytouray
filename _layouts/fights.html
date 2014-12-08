@@ -24,7 +24,8 @@ layout: default
         <div class="timeline-content">
           <h3><span><b>Bady</b> versus</span>{{ item.title }}</h3>
           <p>{{ item.content }}</p>
-          <span class="date">{{ item.date | date: '%d %B %Y' }}</span>
+          <span class=""><i class="fa fa-calendar"></i> {{ item.date | date: '%d %B %Y' }}</span>
+          <span class=""><i class="fa fa-map-marker"></i> {{ item.location }}</span>
         </div>
       </div>
     {% endfor %}
