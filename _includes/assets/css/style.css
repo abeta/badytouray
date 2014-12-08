@@ -97,7 +97,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         display: block;
     }
     .navbar-inverse .navbar-nav>li>a {
-        padding-top:50px;
     }
     .navbar .navbar-brand {
         padding: 15px;
