@@ -34,8 +34,7 @@ layout: default
   {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
   {% include module module="videos" class="black" title="Fights" items=fights %}
   
-  {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
-  {% include module module="fights" class="grey" title="Videos" items=videos %}  
+  {% include module module="videos" class="grey" title="Videos" %}  
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
   {% include module module="sponsors" title="Sponsors" items=sponsors %}

@@ -8,22 +8,7 @@ layout: default
     {{ content }}
     <br>
     {% assign items = (site.videos | where: 'published', 1 | sort: 'order') %}
-      <div class="row equal">
-        {% for item in items %}
-        {% assign video = (item.youtube | split: 'v=') %}
-        {% if video[1] contains '&' %}
-           {% assign video = (video[1] | split: '&') %}
-           {% capture id %}{{ video[0] }}{% endcapture %}
-        {% else %}
-           {% capture id %}{{ video[1] }}{% endcapture %}
-        {% endif %}
-        <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.youtube }}" data-toggle="lightbox">
-        <figure>
-          <div class="thumb-wide img" style="background-image: url(http://img.youtube.com/vi/{{ id }}/0.jpg)"></div>
-        </figure>
-        {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
-        </a><br></div>{% endfor %}
-      </div>
+    {% include module module="videos" class="grey" title="Videos" limit="3" %} 
   </div>
 </div>
 
