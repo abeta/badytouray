@@ -23,11 +23,11 @@ layout: default
         </div>
         <div class="timeline-content">
           <h3><span><b>Bady</b> versus</span>{{ item.title }}</h3>
-          <p>{{ item.content }}</p>
           <span class="text-mute">
             <i class="fa fa-calendar"></i> {{ item.date | date: '%d %B %Y' }}
             <i class="fa fa-map-marker"></i> {{ item.location }}
           </span>
+          <p>{{ item.content }}</p>
         </div>
       </div>
     {% endfor %}
