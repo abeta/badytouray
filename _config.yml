@@ -21,12 +21,10 @@ profiles:
         - facebook
         - twitter
         - google
-        - instagram
     facebook: 'https://facebook.com/BadyTouray'
     twitter: 'https://twitter.com/BadyTouray'
     pinterest: 'https://pinterest.com/brightonjapan'
     google: 'https://plus.google.com/117487081810569331153'
-    instagram: 'https://instagram.com/BadyTouray'
 defaults:
     -
         scope:
@@ -60,5 +58,5 @@ relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
     provider: '1'
-v: 12a
+v: 12l
 baseurl: /
