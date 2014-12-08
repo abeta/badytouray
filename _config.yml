@@ -26,7 +26,7 @@ profiles:
     twitter: 'https://twitter.com/BadyTouray'
     pinterest: 'https://pinterest.com/brightonjapan'
     google: 'https://plus.google.com/117487081810569331153'
-    instagram: 'true'
+    instagram: 'https://instagram.com/BadyTouray'
 defaults:
     -
         scope:
