@@ -512,6 +512,8 @@ h3.versus {
     font-size: 52px;
     display: inline-block;
     color: #fff;
+    background: rgba(0,0,0,0.75);
+    padding: 4px 12px;
 }
 h3.versus span {
     font-size: 20px;
