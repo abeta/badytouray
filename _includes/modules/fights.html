@@ -3,11 +3,11 @@
     {% for item in include.params.items reversed %}
     {% if i < '6' %}
     {% capture i %}{{ i | plus: 1 }}{% endcapture %}
-    <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}fights.html#{{ item.slug }}" >
+    <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}/fights.html#{{ item.slug }}" >
     <figure>
       <div class="thumb-wide img" style="background-image: url(//cdn.donlabs.com/432x243/badytouray/{{ item.image }})"></div>
     </figure>
-    {% if item.title %}<h3>{{ item.title }} {% if item.start_date %}<small>{{ item.start_date | date_to_string }}</small>{% endif %}</h3>{% endif %}
+    {% if item.title %}<h3>{{ item.title }} {% if item.date %}<small>{{ item.date | date_to_string }}</small>{% endif %}</h3>{% endif %}
     {% if item.content %}<p>{{ item.content | strip_html | truncatewords:20 }}</p>{% endif %}
     </a><br></div>
     {% endif %}
