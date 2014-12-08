@@ -55,7 +55,7 @@
         {% assign pages = (site.content | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
         {% assign pagecount = (pages | size) %}
         {% for item in pages %}
-          {% if forloop.index >= (pagecount | divided_by: 2) and navsplit == nil %}
+          {% if forloop.index == (pagecount | divided_by: 2) and navsplit == nil %}
           {% assign navsplit = 1 %}
         </ul>
         <ul class="nav navbar-nav">
