@@ -56,6 +56,7 @@
 @media only screen and (min-width: 1170px) {
     .timeline-block {
         margin: 4em 0;
+        margin-top: -20%;
     }
     .timeline-block:first-child {
         margin-top: 0;
@@ -199,8 +200,6 @@
         margin-left: 0;
         padding: 1.6em;
         width: 45%;
-    }
-    .timeline-block:first-child .timeline-content img {
     }
     .timeline-content img {
         margin: -1.6em;
