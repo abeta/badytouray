@@ -214,6 +214,14 @@ body>footer a {
     text-transform: uppercase;
     border-radius: 0;
 }
+.btn-info {
+    background-color: #09f;
+    border-color: #09f;
+}
+.btn-info:hover {
+    background-color: #069;
+    border-color: #069;
+}
 .btn-danger {
     background-color: #900;
     border-color: #900;
