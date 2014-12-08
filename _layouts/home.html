@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-  {% assign video = (item.youtube | split: 'v=') %}
+  {% assign video = (page.youtube | split: 'v=') %}
   {% if video[1] contains '&' %}
      {% assign video = (video[1] | split: '&') %}
      {% capture id %}{{ video[0] }}{% endcapture %}
