@@ -54,10 +54,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .brand-big {
     display: none;
 }
-.navbar .brand-small {
+.navbar .navbar-brand {
     padding: 5px 15px;
 }
-.brand-small img, .brand-big img{
+.navbar-brand img {
     max-width: 100%;
 }
 .navbar-inverse {
@@ -79,7 +79,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 @media (max-width: 767px) {
-    .navbar .brand-small {
+    .navbar .navbar-brand {
         max-width: 80%;
     }
 }
@@ -97,15 +97,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     .navbar-inverse .navbar-nav>li>a {
         padding-top:50px;
     }
-    .brand-big {
-        display: block;
-        padding-top: 79px;
-    }
-    .navbar .brand-small {
+    .navbar .navbar-brand {
         padding: 15px;
         height: 70px;
     }
-    .navbar .brand-small img {
+    .navbar .navbar-brand img {
         height:30px;
         margin-top:5px;
     }
@@ -132,7 +128,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     }
 }
 @media (min-width: 992px) {
-    .navbar .brand-small img {
+    .navbar .navbar-brand img {
         height:35px;
         margin-top:2px;
     }
@@ -141,7 +137,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     }
 }
 @media (min-width: 1200px) {
-    .navbar .brand-small img {
+    .navbar .navbar-brand img {
         height:40px;
         margin-top:0;
     }
