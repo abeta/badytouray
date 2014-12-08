@@ -518,15 +518,16 @@ a.box:hover {
     background-color: #3f729b;
 }
 h3.versus {
-    font-size: 38px;
+    font-size: 52px;
     display: inline-block;
 }
 h3.versus span {
-    font-size: 12px;
+    font-size: 20px;
     float: left;
-    margin: 5px 8px 0 0;
+    margin: 6px 8px 0 0;
 }
 h3.versus b {
-    font-size: 17px;
+    font-size: 28px;
     display: block;
+    margin-bottom: -5px;
 }
