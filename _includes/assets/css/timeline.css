@@ -202,6 +202,12 @@
     }
     .timeline-content img {
         margin: -1.6em;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+    }
+    .timeline-block:first-child .timeline-content img {
     }
     .timeline-content::before {
         top: 24px;
