@@ -109,7 +109,13 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     .navbar.affix-top {
         position: absolute;
         top:0;
-        background-color: rgba(0,0,0,0.5);
+        background-color: transparent;
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+        background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+        background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+        background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
         padding: 10px 0;
     }
     .navbar.affix-top.navbar-bottom{
