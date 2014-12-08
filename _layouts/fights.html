@@ -16,7 +16,7 @@ layout: default
     
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
-    {% for item in fights %}
+    {% for item in fights reversed %}
       <div class="timeline-block">
         <div class="timeline-img result-{{ item.result }}">
           <span class="fa fa-trophy"></span>
