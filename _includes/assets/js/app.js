@@ -48,7 +48,7 @@ $(window).scroll(function(){
 $(function() {
     $('#nav').affix({
         offset: {
-            top: $('#nav').offset().top + $('#nav').height();
+            top: $('#nav').offset().top + $('#nav').height()
         }
     }); 
 });
