@@ -5,7 +5,7 @@
             <field name="date" type="datetime" label="Date" filter="date" class="form-control" admintable="true" />
             <field name="location" type="text" label="Location" filter="string" class="form-control" admintable="true" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
-            <field name="ticket" type="url" label="Ticket Link" filter="url" class="form-control" />
+            <field name="price" type="text" label="Ticket Price" filter="string" class="form-control" />
             <field name="result" type="list" default="" label="Result" description="" admintable="true">
                 <option value=""></option>
                 <option value="w">Win</option>
