@@ -21,7 +21,7 @@ layout: default
       {% capture currentyear %}{{ item.date | date: "%Y" }}{% endcapture %}
       {% if currentyear != year %}
         {% capture year %}{{ currentyear }}{% endcapture %}
-        <h4 class="label label-danger text-center">{{ currentyear }}</h4>
+        <div class="text-center"><span class="label label-danger label-danger">{{ currentyear }}</span></div>
       {% endif %}
       
       <div class="timeline-block">
