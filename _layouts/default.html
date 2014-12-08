@@ -59,7 +59,7 @@
               {% if item.slug == 'index' %}Home{% else %}{{ item.title }}{% endif %}
             </a>
           </li>
-        {% if forloop.index == (forloop.length | divided_by: 2 ) and navsplit == nil %}
+        {% if forloop.index >= (forloop.length | divided_by: 2 ) and navsplit == nil %}
         {% assign navsplit = 1 %}
         </ul>
         <ul class="nav navbar-nav">
