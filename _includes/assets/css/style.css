@@ -54,7 +54,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .navbar .navbar-brand {
     padding: 5px 15px;
 }
-.navbar-header {
+.navbar .navbar-header {
     margin: 0 auto;
     width:130px;
     float: none;
