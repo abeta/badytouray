@@ -49,8 +49,6 @@ layout: default
       </div>
       <div class="modal-body">
       
-        <input type='hidden' name='amount' value='{{ next_fight.price }}'>
-        <input type='hidden' name='item_name' value='Bady vs. {{ next_fight.title }}'>
         
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Quantity</label>
@@ -108,6 +106,8 @@ layout: default
       </div>
       
     <!--PAYPAL VARIABLES-->
+        <input type='hidden' name='item_name' value='Bady vs. {{ next_fight.title }}'>
+        <input type='hidden' name='amount' value='{{ next_fight.price }}'>
     	<input type='hidden' name='cmd' value='_xclick'>
     	<input type='hidden' name='rm' value='2'>
     	<input type="hidden" name="business" value="{{ site.paypal }}" />
