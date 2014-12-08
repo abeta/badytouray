@@ -10,7 +10,7 @@ layout: default
   {% else %}
      {% capture id %}{{ video[1] }}{% endcapture %}
   {% endif %}
-  <div class="datebox pull-right" id="countdown" data-date="{{ next_fight.date }}"></div>
+  <div class="datebox" id="countdown" data-date="{{ next_fight.date }}"></div>
   <div class="fh" id="home" data-video="{{ id }}"></div>
   <div class="section" id="content">
     <div class="container">
