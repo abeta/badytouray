@@ -184,7 +184,6 @@ body>footer a {
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: url(../../images/events/banner.jpg);
 }
 .item>.banner {
     position: absolute;
@@ -335,10 +334,17 @@ a.thumb, a.thumb:hover {
         width: 20%;
     }
 }
-
+.datebox {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-top: -100px;
+    width: 100%;
+    text-align: center;
+}
 .datebox span {
     background: #fff;
-    display: block;
+    display: inline-block;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     width: 40px;
     text-align: center;
