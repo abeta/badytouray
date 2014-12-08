@@ -520,6 +520,7 @@ a.box:hover {
 h3.versus {
     font-size: 52px;
     display: inline-block;
+    color: #fff;
 }
 h3.versus span {
     font-size: 20px;
