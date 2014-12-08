@@ -124,11 +124,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     }
     .navbar .nav-left {
         right: 50%;
-        margin-right: 100px;
+        margin-right: 120px;
     }
     .navbar .nav-right {
         left: 50%;
-        margin-left: 100px;
+        margin-left: 120px;
     }
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
         color: #f00 !important;
