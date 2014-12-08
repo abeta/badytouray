@@ -53,15 +53,15 @@
         <ul class="nav navbar-nav">
         
         {% assign pages = (site.content | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
-        {% assign pagecount = (pages | size) %}
+        {% assign pagecount = (pages | size | divided_by: 2) %}
         {% for item in pages %}
-          {% if forloop.index == (pagecount | divided_by: 2) and navsplit == nil %}
+          {% if forloop.index > pagecount and navsplit == nil %}
           {% assign navsplit = 1 %}
         </ul>
         <ul class="nav navbar-nav">
           {% endif %}
           <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
-            <a href="{{site.url}}{{ item.url }}">{{ forloop.index }}-{{ pagecount | divided_by: 2 }}
+            <a href="{{site.url}}{{ item.url }}">{{ forloop.index }}-{{ pagecount }}
               {% if item.slug == 'index' %}Home{% else %}{{ item.title }}{% endif %}
             </a>
           </li>
