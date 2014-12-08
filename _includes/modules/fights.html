@@ -2,7 +2,7 @@
     {% capture i %}0{% endcapture %}
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     {% for item in fights reversed %}
-    {% if (item.date | date: '%s') < (site.now | date: '%s') %}
+    {% if (item.date | date: '%s') < (site.time | date: '%s') %}
     {% if include.params.limit == nil or i < include.params.limit %}
       {% capture i %}{{ i | plus: 1 }}{% endcapture %}
       <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}/fights.html#{{ item.slug }}" >
