@@ -39,10 +39,10 @@ a {
     color: #039;
 }
 a:hover, a:focus {
-    color: #06f;
+    color: #09f;
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: #f00;
+    border-color: #09f;
 }
 .navbar {
     width:100%;
