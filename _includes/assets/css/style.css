@@ -100,6 +100,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     .navbar .navbar-brand {
         padding: 15px;
         height: 70px;
+        margin-right: -15px;
     }
     .navbar .navbar-brand img {
         height:30px;
