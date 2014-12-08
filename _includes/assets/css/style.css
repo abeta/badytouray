@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .datebox span, .text-lg {
     margin-top:0;
 }
 a {
-    color: #009;
+    color: #039;
 }
 a:hover, a:focus {
     color: #f00;
@@ -369,7 +369,7 @@ a.thumb, a.thumb:hover {
     margin-top: 2px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 16px;
-    background: #009;
+    background: #039;
     color: #fff;
 }
 .section {
