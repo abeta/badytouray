@@ -353,6 +353,7 @@ a.thumb, a.thumb:hover {
     margin: 0 5px;
     font-size: 18px;
     padding-top:3px;
+    line-height: 24px;
 }
 .datebox small {
     display: block;
