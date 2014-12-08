@@ -341,9 +341,6 @@ a.thumb, a.thumb:hover {
     width: 100%;
     text-align: center;
 }
-.datebox {
-    display: inline-block;
-}
 .datebox span {
     background: #fff;
     display: inline-block;
