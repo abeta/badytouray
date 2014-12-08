@@ -12,7 +12,7 @@ layout: default
         {% for item in items %}
         {% assign video = (item.youtube | split: 'v=') %}
         {% if video[1] contains '&' %}
-           {% capture video %}{{ video[1] | split: '&' }}{% endcapture %}
+           {% assign video = (video[1] | split: '&') %}
            {% capture id %}{{ video[0] }}{% endcapture %}
         {% else %}
            {% capture id %}{{ video[1] }}{% endcapture %}
