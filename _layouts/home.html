@@ -15,9 +15,11 @@ layout: default
     <h3 class="versus">
       <span><b>Bady</b><div class="text-danger">versus</div></span>
       {{ next_fight.title }}
-    </h3><br>
-    <div class="datebox" id="countdown" data-date="{{ next_fight.date }}"></div>
-    <button type="button" class="btn btn-danger btn-lg">Buy Tickets</button>
+    </h3>
+    <div>
+      <div class="datebox" id="countdown" data-date="{{ next_fight.date }}"></div>
+      <button type="button" class="btn btn-danger btn-lg">Buy Tickets</button>
+    </div>
   </div>
   
   <div class="fh" id="home" data-video="{{ id }}"></div>
