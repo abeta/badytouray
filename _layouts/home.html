@@ -32,7 +32,10 @@ layout: default
   </div>
   
   {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
-  {% include module module="fights" class="grey" title="Fights" items=fights %} 
+  {% include module module="videos" class="black" title="Fights" items=fights %}
+  
+  {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
+  {% include module module="fights" class="grey" title="Videos" items=videos %}  
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
   {% include module module="sponsors" title="Sponsors" items=sponsors %}
