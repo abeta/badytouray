@@ -8,7 +8,18 @@ layout: default
     {{ content }}
     <br>
     {% assign items = (site.videos | where: 'published', 1 | sort: 'order') %}
-    {% include module module="gallery" items=items style="raw" %} 
+      <div class="row equal">
+        {% for item in items %}
+        {% capture video %}{{ item.youtube | split: 'v=' }}{% endcapture %}
+        {% capture video %}{{ video[1] | split: '&' }}{% endcapture %}
+        {% capture id %}{{ video[0] }}{% endcapture %}
+        <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}{{ item.url }}" >
+        <figure>
+          <div class="thumb-wide img" style="background-image: url(http://img.youtube.com/vi/{{ id }}/0.jpg)"></div>
+        </figure>
+        {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
+        </a><br></div>{% endfor %}
+      </div>
   </div>
 </div>
 
