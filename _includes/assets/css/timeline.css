@@ -8,7 +8,13 @@
     font-size: 32px;
 }
 #timeline h3 span {
-    font-size: 16px;
+    font-size: 12px;
+    float: left;
+    margin-right: 10px;
+}
+#timeline h3 b {
+    font-size: 18px;
+    display: block;
 }
 #timeline::before {
     /* this is the vertical line */
