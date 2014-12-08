@@ -334,13 +334,16 @@ a.thumb, a.thumb:hover {
         width: 20%;
     }
 }
-.datebox {
+.next_fight {
     position: absolute;
     z-index: 99;
     top: 100%;
     margin-top: -100px;
     width: 100%;
     text-align: center;
+}
+.datebox {
+    display: inline-block;
 }
 .datebox span {
     background: #fff;
