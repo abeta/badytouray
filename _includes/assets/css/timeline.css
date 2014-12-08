@@ -53,11 +53,15 @@
 }
 
 .timeline-img {
+  font-family: 'Open Sans', sans-serif;
   position: absolute;
+  text-align: center;
+  font-size: 32px;
   top: 0;
   left: 0;
   width: 40px;
   height: 40px;
+  line-height: 40px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
@@ -70,7 +74,6 @@
   top: 50%;
   margin-left: -12px;
   margin-top: -12px;
-  font-size:24px;
 }
 .timeline-img.result-w {
   background: #449d44;
@@ -85,6 +88,7 @@
   .timeline-img {
     width: 60px;
     height: 60px;
+    line-height: 60px;
     left: 50%;
     margin-left: -30px;
     /* Force Hardware Acceleration in WebKit */
