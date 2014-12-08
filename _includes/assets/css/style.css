@@ -515,7 +515,15 @@ a.box:hover {
 .nav-instagram a {
     background-color: #3f729b;
 }
-
-#tubular-container {
-    position: absolute !important;
+h3.versus {
+    font-size: 38px;
+}
+h3.versus span {
+    font-size: 12px;
+    float: left;
+    margin: 5px 8px 0 0;
+}
+h3.versus b {
+    font-size: 17px;
+    display: block;
 }
