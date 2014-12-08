@@ -62,6 +62,18 @@
         {% endfor %}
         
         </ul>
+        <ul class="nav navbar-nav">
+        
+        {% assign pages = (site.content | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
+        {% for item in pages %}
+          <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
+            <a href="{{site.url}}{{ item.url }}">
+              {% if item.slug == 'index' %}Home{% else %}{{ item.title }}{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+        
+        </ul>
       </div>
       <!--/.nav-collapse -->
     </div>
