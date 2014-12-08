@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+  {% assign fights = (site.fights | where: 'published', 1 | sort: 'date' | last) %}
+  
   {% assign video = (page.youtube | split: 'v=') %}
   {% if video[1] contains '&' %}
      {% assign video = (video[1] | split: '&') %}
@@ -8,6 +10,7 @@ layout: default
   {% else %}
      {% capture id %}{{ video[1] }}{% endcapture %}
   {% endif %}
+  <div class="datebox pull-right" id="countdown" data-date="2015-09-14"></div>
   <div class="fh" id="home" data-video="{{ id }}"></div>
   <div class="section" id="content">
     <div class="container">
@@ -16,7 +19,7 @@ layout: default
     </div>
   </div>
   
-  {% assign fights = (site.fights reversed | where: 'published', 1 | sort: 'date') %}
+  {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
   {% include module module="fights" class="grey" title="Fights" items=fights %} 
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
