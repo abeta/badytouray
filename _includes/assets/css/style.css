@@ -56,6 +56,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .navbar .navbar-brand {
     padding: 5px 15px;
+    margin: 0 auto;
 }
 .navbar-brand img {
     max-width: 100%;
