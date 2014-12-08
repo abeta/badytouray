@@ -17,6 +17,13 @@ layout: default
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
     {% for item in fights reversed %}
+    
+      {% capture currentyear %}{{ item.date | date: "%Y" }}{% endcapture %}
+      {% if currentyear != year %}
+        {% capture year %}{{ currentyear }}{% endcapture %}
+        {{ currentyear }}
+      {% endif %}
+      
       <div class="timeline-block">
         <div class="timeline-img result-{{ item.result }}">
           {{ item.result | capitalize }}
