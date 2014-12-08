@@ -39,7 +39,7 @@ a {
     color: #039;
 }
 a:hover, a:focus {
-    color: #f00;
+    color: #06f;
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     border-color: #f00;
@@ -140,7 +140,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         left: 50%;
     }
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-        color: #f00 !important;
+        color: #06f !important;
         background-color: transparent;
     }
     .navbar-inverse {
