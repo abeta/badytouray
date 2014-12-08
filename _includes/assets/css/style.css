@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .datebox span, .text-lg {
     margin-top:0;
 }
 a {
-    color: #900;
+    color: #009;
 }
 a:hover, a:focus {
     color: #f00;
@@ -285,18 +285,6 @@ a.thumb, a.thumb:hover {
     margin: 0;
     background: #fff;
 }
-.thumb:hover figure::before{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -50px;
-    background: #900;
-    content: "";
-    border-radius: 50%;
-}
 .thumb figure * {
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -381,7 +369,7 @@ a.thumb, a.thumb:hover {
     margin-top: 2px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 16px;
-    background: #900;
+    background: #009;
     color: #fff;
 }
 .section {
