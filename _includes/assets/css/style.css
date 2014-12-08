@@ -51,12 +51,12 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     z-index:1030;
     margin:0;
 }
-.brand-big {
-    display: none;
-}
 .navbar .navbar-brand {
     padding: 5px 15px;
+}
+.navbar-header {
     margin: 0 auto;
+    width:130px;
 }
 .navbar-brand img {
     max-width: 100%;
