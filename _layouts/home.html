@@ -11,7 +11,7 @@ layout: default
   </div>
   
   {% assign fights = (site.fights reversed | where: 'parent', nil | where: 'published', 1 | sort: 'date'| limit: 6) %}
-  {% include module module="gallery" class="grey" title="Fights" items=fights %} 
+  {% include module module="fights" class="grey" title="Fights" items=fights %} 
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
   {% include module module="sponsors" title="Sponsors" items=sponsors %}
