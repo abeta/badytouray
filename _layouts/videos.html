@@ -10,7 +10,7 @@ layout: default
     {% assign items = (site.videos | where: 'published', 1 | sort: 'order') %}
       <div class="row equal">
         {% for item in items %}
-        {% capture video %}{{ item.youtube | split: 'v=' }}{% endcapture %}
+        {% assign video = (item.youtube | split: 'v=') %}
         {% if video[1] contains '&' %}
            {% capture video %}{{ video[1] | split: '&' }}{% endcapture %}
            {% capture id %}{{ video[0] }}{% endcapture %}
