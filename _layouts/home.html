@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-  {% assign fights = (site.fights | where: 'published', 1 | sort: 'date' | last) %}
+  {% assign next_fight = (site.fights | where: 'published', 1 | sort: 'date' | last) %}
   
   {% assign video = (page.youtube | split: 'v=') %}
   {% if video[1] contains '&' %}
@@ -10,7 +10,7 @@ layout: default
   {% else %}
      {% capture id %}{{ video[1] }}{% endcapture %}
   {% endif %}
-  <div class="datebox pull-right" id="countdown" data-date="2015-09-14"></div>
+  <div class="datebox pull-right" id="countdown" data-date="{{ next_fight }}"></div>
   <div class="fh" id="home" data-video="{{ id }}"></div>
   <div class="section" id="content">
     <div class="container">
