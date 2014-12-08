@@ -6,10 +6,7 @@ function getUrlVars(url) {
     return vars;
 }
 
-$(function() {
-	$('#home').tubular({ videoId: $('#home').data('video') });
-});
-
+$("#home").mb_YTPlayer({videoURL:$('#home').data('video'),containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:false, quality:'default'});
 
 // smooth scroll to anchor
 $(function() {
