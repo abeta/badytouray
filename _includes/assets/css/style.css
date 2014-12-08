@@ -266,9 +266,6 @@ a.thumb, a.thumb:hover {
     text-decoration:none;
     cursor: pointer;
 }
-.thumb p {
-    clear: both;
-}
 .thumb figure {
     position: relative;
     overflow: hidden;
