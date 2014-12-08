@@ -1,8 +1,8 @@
   <div class="row equal">
     {% capture i %}0{% endcapture %}
-    {% assign items = (site.videos | where: 'published', 1 | sort: 'order') %}
-    {% for item in items %}
-    {% if i < include.params.limit %}
+    {% assign videos = (site.videos | where: 'published', 1 | sort: 'order') %}
+    {% for item in videos %}
+    {% if include.params.limit == nil or i < include.params.limit %}
     {% assign video = (item.youtube | split: 'v=') %}
     {% if video[1] contains '&' %}
        {% assign video = (video[1] | split: '&') %}
