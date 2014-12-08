@@ -21,10 +21,12 @@ profiles:
         - facebook
         - twitter
         - google
+        - instagram
     facebook: 'https://facebook.com/BadyTouray'
     twitter: 'https://twitter.com/BadyTouray'
     pinterest: 'https://pinterest.com/brightonjapan'
     google: 'https://plus.google.com/117487081810569331153'
+    instagram: 'http://instagram.com/badytouray'
 defaults:
     -
         scope:
@@ -42,9 +44,6 @@ collections:
     content:
         output: true
         permalink: ':path.html'
-    fights:
-    videos:
-    sponsors:
 facebook_gallery:
     exclude:
         - 'Timeline Photos'
