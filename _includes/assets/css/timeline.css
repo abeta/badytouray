@@ -211,10 +211,10 @@
         border-color: transparent;
         border-left-color: white;
     }
-    .timeline-block:nth-child(even) .timeline-content {
+    .timeline-block:nth-child(odd) .timeline-content {
         float: right;
     }
-    .timeline-block:nth-child(even) .timeline-content::before {
+    .timeline-block:nth-child(odd) .timeline-content::before {
         top: 24px;
         left: auto;
         right: 100%;
