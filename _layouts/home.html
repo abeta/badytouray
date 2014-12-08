@@ -10,14 +10,7 @@ layout: default
     </div>
   </div>
   
-  <div class="black section bg-pattern-1">
-    <div class="container">
-      <a href="{{ site.url }}tickets.html" class="btn btn-danger btn-lg pull-right">Buy Tickets</a>
-      <div class="datebox pull-right" id="countdown" data-date="9-14-2015 00:00:00"></div>
-      <span class="text-lg">14th - 20th September, 2015</span>
-    </div>
-  </div>
-  {% assign fights = (site.fights | where: 'parent', nil | where: 'published', 1 | sort: 'date') %}
+  {% assign fights = (site.fights reverse | where: 'parent', nil | where: 'published', 1 | sort: 'date') %}
   {% include module module="gallery" class="grey" title="Fights" items=fights %} 
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
