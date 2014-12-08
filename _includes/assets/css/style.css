@@ -115,8 +115,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
         background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-
         padding: 10px 0;
+        border-top: 20px solid #000;
     }
     .navbar.affix-top.navbar-bottom{
         top:auto;
@@ -145,7 +145,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 @media (min-width: 1200px) {
     .navbar .navbar-brand img {
-        height:100px;
+        height:200px;
         margin-top:0;
     }
     .navbar-inverse {
