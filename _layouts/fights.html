@@ -19,7 +19,7 @@ layout: default
     {% for item in fights reversed %}
       <div class="timeline-block">
         <div class="timeline-img result-{{ item.result }}">
-          <span class="fa fa-trophy"></span>
+          {{ item.result | capitalize }}
         </div>
         <div class="timeline-content">
           <h2>{{ item.title }}</h2>
