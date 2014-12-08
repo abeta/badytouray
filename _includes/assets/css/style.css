@@ -132,7 +132,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     }
     .navbar.affix .nav {
         top: 15px;
-        margin: 0 90px;
+        margin: 0 70px;
     }
     .navbar .nav-left {
         right: 50%;
