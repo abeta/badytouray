@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
-  <div class="fh">
+  {% assign video = (item.youtube | split: 'v=') %}
+  {% if video[1] contains '&' %}
+     {% assign video = (video[1] | split: '&') %}
+     {% capture id %}{{ video[0] }}{% endcapture %}
+  {% else %}
+     {% capture id %}{{ video[1] }}{% endcapture %}
+  {% endif %}
+  <div class="fh" id="home" video="{{ id }}">
       
   </div>
   <div class="section" id="content">

@@ -24,7 +24,7 @@ layout: default
         <div class="text-center"><span class="label label-info rel">{{ currentyear }}</span></div>
       {% endif %}
       
-      <div class="timeline-block">
+      <div class="timeline-block" id="{{ item.slug }}">
         <div class="timeline-img result-{{ item.result }}">
           {{ item.result | capitalize }}
         </div>
