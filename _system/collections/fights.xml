@@ -2,7 +2,7 @@
 <form>
     <fields>
         <fieldset name="options">
-            <field name="fight_date" type="datetime" label="Date" filter="date" class="form-control" admintable="true" />
+            <field name="date" type="datetime" label="Date" filter="date" class="form-control" admintable="true" />
             <field name="location" type="text" label="Location" filter="string" class="form-control" admintable="true" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
             <field name="ticket" type="url" label="Ticket Link" filter="url" class="form-control" />
