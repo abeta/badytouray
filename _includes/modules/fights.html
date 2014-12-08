@@ -1,5 +1,5 @@
   <div class="row equal">
-    {% for item in include.params.items reversed %}
+    {% for item in include.params.items reversed limit: 6 %}
     <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}{{ item.url }}" >
     <figure>
       <div class="thumb-wide img" style="background-image: url(//cdn.donlabs.com/432x243/badytouray/{{ item.image }})"></div>
