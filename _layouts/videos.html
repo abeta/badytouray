@@ -12,9 +12,9 @@ layout: default
         {% for item in items %}
         {% capture video %}{{ item.youtube | split: 'v=' }}{% endcapture %}
         {% if video contains '&' %}
-           {% capture video %}{{ v1[1] | split: '&' }}{% endcapture %}
+           {% capture video %}{{ video[1] | split: '&' }}{% endcapture %}
         {% endif %}
-        {% capture id %}{{ v1[1] }}{% endcapture %}
+        {% capture id %}{{ video[1] }}{% endcapture %}
         <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}{{ item.url }}" >
         <figure>
           <div class="thumb-wide img" style="background-image: url(http://img.youtube.com/vi/{{ id }}/0.jpg)"></div>
