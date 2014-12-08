@@ -43,10 +43,11 @@ collections:
         output: true
         permalink: ':path.html'
     fights:
-        output: true
+        output: false
     videos:
-        output: true
+        output: false
     sponsors:
+        output: false
 facebook_gallery:
     exclude:
         - 'Timeline Photos'
