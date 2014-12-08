@@ -3,19 +3,19 @@
     {% assign videos = (site.videos | where: 'published', 1 | sort: 'order') %}
     {% for item in videos %}
     {% if include.params.limit == nil or i < include.params.limit %}
-    {% assign video = (item.youtube | split: 'v=') %}
-    {% if video[1] contains '&' %}
-       {% assign video = (video[1] | split: '&') %}
-       {% capture id %}{{ video[0] }}{% endcapture %}
-    {% else %}
-       {% capture id %}{{ video[1] }}{% endcapture %}
-    {% endif %}
-    <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.youtube }}" data-toggle="lightbox">
-    <figure>
-      <div class="thumb-wide img" style="background-image: url(http://img.youtube.com/vi/{{ id }}/0.jpg)"></div>
-    </figure>
-    {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
-    </a><br></div>
+      {% assign video = (item.youtube | split: 'v=') %}
+      {% if video[1] contains '&' %}
+        {% assign video = (video[1] | split: '&') %}
+        {% capture id %}{{ video[0] }}{% endcapture %}
+      {% else %}
+        {% capture id %}{{ video[1] }}{% endcapture %}
+      {% endif %}
+      <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.youtube }}" data-toggle="lightbox">
+      <figure>
+        <div class="thumb-wide img" style="background-image: url(http://img.youtube.com/vi/{{ id }}/0.jpg)"></div>
+      </figure>
+      {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
+      </a><br></div>
     {% endif %}
     {% endfor %}
   </div>
