@@ -10,8 +10,8 @@ layout: default
   </div>
   
 <div class=""><div class="container">{% include system/sharing %}</div></div>
-<div class="section" id="content">
-  <div class="grey container"> 
+<div class="grey section" id="content">
+  <div class="container"> 
     {{ content }}
     
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
