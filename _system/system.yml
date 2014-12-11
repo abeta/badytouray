@@ -12,6 +12,14 @@ videos:
 shop:
     title: Shop
     icon: shopping-cart
+    items:
+        produts:
+            title: Produts
+            icon: shopping-cart
+        categories:
+            title: Categories
+            icon: folder
+    
 sponsors:
     title: Sponsors
     icon: money
