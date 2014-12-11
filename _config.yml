@@ -61,6 +61,6 @@ relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
     provider: '1'
-v: 15a
+v: 15b
 baseurl: /
 paypal: lil_blak@hotmail.co.uk
