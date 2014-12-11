@@ -544,3 +544,6 @@ h3.versus b {
     display: block;
     margin-bottom: -5px;
 }
+#home {
+    background: #000;
+}
