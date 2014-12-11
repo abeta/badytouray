@@ -45,6 +45,8 @@ collections:
     content:
         output: true
         permalink: ':path.html'
+    shop:
+        output: true
     fights:
         output: true
     videos:

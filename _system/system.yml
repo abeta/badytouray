@@ -9,6 +9,9 @@ fights:
 videos:
     title: Videos
     icon: video-camera
+shop:
+    title: Shop
+    icon: shopping-cart
 sponsors:
     title: Sponsors
     icon: money
