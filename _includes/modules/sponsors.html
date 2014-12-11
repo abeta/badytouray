@@ -1,5 +1,6 @@
+  {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}  
   <ul class="box-list box-list-xs">
-    {% for item in include.params.items %}
+    {% for item in sponsors %}
     <li><a title="{{ item.title }}" href="{{ item.website }}" target="_blank">
       <div class="thumb-wide thumb-contain img" style="background-image: url(http://cdn.abemedia.co.uk/432x0/brightonjapan/{{ item.image }})"></div>
     </a>
