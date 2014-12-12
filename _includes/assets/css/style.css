@@ -428,8 +428,8 @@ a.box:hover {
     text-decoration:none;
 }
 .carousel .box {
-    max-width:400px;
     margin: 0 0 5px;
+    clear: both;
 }
 .carousel h3.box {
     display: inline-block;
