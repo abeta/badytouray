@@ -125,6 +125,12 @@ body>footer a {
     background-size: cover;
     background-position: center;
 }
+.thumb-extra-wide {
+    height: 0;
+    padding: 0 0 28%;
+    background-size: cover;
+    background-position: center;
+}
 .thumb-contain {
     background-size: contain;
     background-repeat: no-repeat;
