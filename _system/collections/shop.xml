@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+        <fieldset name="options">
+            <field name="price" type="text" label="Price" filter="int" class="form-control" />
+            <field name="category" type="itemlist" label="Category" filter="string" app="shop_categories" class="form-control" />
+            <field name="image" type="media" label="Image" filter="string" class="form-control" />
+        </fieldset>
+    </fields>
+</form>

@@ -7,7 +7,7 @@ layout: default
   <div class="container">
     {{ content }}
     <br>
-    {% assign items = (site.shop_categories | where: 'published', 1 | sort: 'order') %}
+    {% assign items = (site.shop | where: 'category', page.slug | where: 'published', 1 | sort: 'order') %}
     <div class="row equal">
     {% for item in items %}
       <div class="col-sm-6 col-md-4">
