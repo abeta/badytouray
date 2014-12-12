@@ -3,10 +3,10 @@ layout: default
 ---
   {% assign next_fight = (site.fights | where: 'published', 1 | sort: 'date' | last) %}
   
-  {% capture tickets %}{% for i in (1..5) %}{{ next_fight["ticket_" + {{ i }}] }}|{% endfor %}{% endcapture %}
+  {% capture tickets %}{% for i in (1..5) %}{{ next_fight["ticket_" + i] }}|{% endfor %}{% endcapture %}
   {% assign tickets = (tickets | split: '|') %}
   
-  {% capture prices %}{% for i in (1..5) %}{{ next_fight["price_" + {{ i }}] }}|{% endfor %}{% endcapture %}
+  {% capture prices %}{% for i in (1..5) %}{{ next_fight["price_" + i] }}|{% endfor %}{% endcapture %}
   {% assign prices = (prices | split: '|') %}
   
   {% assign video = (page.youtube | split: 'v=') %}
