@@ -5,7 +5,7 @@ layout: nil
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% capture site_url %}{% if site.url %}{{ site.url }}{% else %}{{ site.github.url }}{% endif %}{% endcapture %}
   {% for collection in site.collections %}
-  {% for post in site[collection] %}
+  {% for post in site[{{collection}}] %}
   <url>
     <loc>{{ site_url }}{{ post.url | remove: 'index.html' }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
