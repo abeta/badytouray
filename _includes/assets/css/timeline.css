@@ -38,6 +38,13 @@
     }
 }
 
+.timeline-year {
+    text-align: center;
+    position: absolute; 
+    margin-top: -40px; 
+    width: 100%;
+}
+
 .timeline-block {
     position: relative;
     margin: 2em 0;
