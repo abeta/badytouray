@@ -62,7 +62,7 @@ layout: default
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Ticket Type</label>
         <div class="col-sm-7">
-          <select id="ticket_name" name="amount" class="form-control" onchange="document.getElementById('item_name').value = document.getElementById('ticket_name').value + ' ' + document.getElementById('fight_name').value">
+          <select id="ticket_name" name="amount" class="form-control">
             {% for price in prices %}{% if price %}
             <option value="{{ price }}">{{ tickets[forloop.index0] }} (&pound;{{ price }})</option>
             {% endif %}{% endfor %}

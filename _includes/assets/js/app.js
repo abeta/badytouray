@@ -185,3 +185,7 @@ $( "#contactForm" ).submit(function( event ) {
             $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
         });
 });
+
+$('ticket_name').on('change', function() {
+    $('item_name').val($('fight_name').text() + ' ' + $("#ticket_name option:selected").text());
+});
