@@ -3,7 +3,7 @@
     <div class="container rel">
       <ol class="carousel-indicators">
         {% capture i %}0{% endcapture %}
-        {% for item in include.category %}
+        {% for item in include.params.category %}
         <li data-target="#carousel" data-slide-to="{{i}}" class="{% if {{i}} == '0' %}active{% endif %}"></li>
         {% capture i %}{{ i | plus:1 }}{% endcapture %}
         {% endfor %}
@@ -13,7 +13,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       {% capture i %}0{% endcapture %}
-      {% for item in include.category %}
+      {% for item in include.params.category %}
       <a class="item fh {% if {{i}} == '0' %}active{% endif %}" href="{{ site.url }}{{ item.url }}">
         <div class="banner" style="background-image:url(http://cdn.donlabs.com/1280x720/badytouray/{{ item.image }})"></div>
         <div class="next_fight">
