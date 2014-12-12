@@ -127,7 +127,7 @@
         font-size: 28px;
     }
 }
-.subnav {
+.navbar .subnav {
     position: absolute;
     top: 100%;
     background-color: #09F;
