@@ -14,11 +14,17 @@ layout: default
     {{ content }}
     <ul class="fight-stats h1">
       <li class="box">
-        10<div class="h3 text-success">Won</div>
+        {% assign won = (site.fights | where: 'published', 1 | result: 'w') %}
+        {{ won | size }}
+        <div class="h3 text-success">Won</div>
       <li class="box">
-        10<div class="h3 text-danger">Lost</div>
+        {% assign lost = (site.fights | where: 'published', 1 | result: 'l') %}
+        {{ lost | size }}
+        <div class="h3 text-danger">Lost</div>
       <li class="box">
-        10<div class="h3 text-warning">Draw</div>
+        {% assign draw = (site.fights | where: 'published', 1 | result: 'd') %}
+        {{ draw | size }}
+        <div class="h3 text-warning">Draw</div>
     </ul>
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
