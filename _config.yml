@@ -82,3 +82,6 @@ comments:
 v: 15c
 baseurl: /
 paypal: lil_blak@hotmail.co.uk
+gems:
+  - jekyll-sitemap
+  
