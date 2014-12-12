@@ -545,3 +545,12 @@ h3.versus b {
 body .don-share {
     margin: 10px -10px 0 0;
 }
+
+.fight-stats {
+    text-align: center;
+    float: right;
+}
+.fight-stats li {
+    float: left;
+    margin-right: 10px;
+}
