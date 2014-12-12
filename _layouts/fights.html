@@ -14,15 +14,15 @@ layout: default
     {{ content }}
     <ul class="fight-stats h1">
       <li class="box">
-        {% assign won = (site.fights | where: 'published', 1 | where: 'result' 'w') %}
+        {% assign won = (site.fights | where: 'published', 1 | where: 'result', 'w') %}
         {{ won | size }}
         <div class="h4 text-success">Won</div>
       <li class="box">
-        {% assign lost = (site.fights | where: 'published', 1 | where: 'result' 'l') %}
+        {% assign lost = (site.fights | where: 'published', 1 | where: 'result', 'l') %}
         {{ lost | size }}
         <div class="h4 text-danger">Lost</div>
       <li class="box">
-        {% assign draw = (site.fights | where: 'published', 1 | where: 'result' 'd') %}
+        {% assign draw = (site.fights | where: 'published', 1 | where: 'result', 'd') %}
         {{ draw | size }}
         <div class="h4 text-warning">Draw</div>
     </ul>
