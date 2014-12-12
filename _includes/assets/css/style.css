@@ -559,9 +559,12 @@ body .don-share {
     float: right;
     list-style: none;
     width: 50%;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 .fight-stats li {
     display: inline-block;
     margin-right: 10px;
+}
+.fight-stats li div {
+    margin-top: -20px;
 }
