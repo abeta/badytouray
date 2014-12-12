@@ -63,6 +63,7 @@ layout: default
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Ticket Type</label>
         <div class="col-sm-7">
+        {{ prices | jsonify }}
           <select name="amount" class="form-control" onchange="">
             {% for price in prices %}{% if price %}
             <option value="{{ price }}">{{ tickets[forloop.index] }}</option>
