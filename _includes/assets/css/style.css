@@ -280,7 +280,7 @@ a.thumb, a.thumb:hover {
     position: relative;
     overflow: hidden;
     margin: 0;
-    background: #fff;
+    background: #000;
 }
 .thumb figure * {
     -webkit-transition: all 0.4s ease-in-out;
@@ -290,12 +290,7 @@ a.thumb, a.thumb:hover {
     transition: all 0.4s ease-in-out;
 }
 .thumb:hover figure img, .thumb:hover figure .img {
-    -moz-transform: scale(1.2) rotate(-3deg);
-    -webkit-transform: scale(1.2) rotate(-3deg);
-    -o-transform: scale(1.2) rotate(-3deg);
-    -ms-transform: scale(1.2) rotate(-3deg);
-    transform: scale(1.2) rotate(-3deg);
-    filter: alpha(opacity=50);
+    opacity: 0.5;
 }
 .thumb figure>.label {
     position:absolute;
