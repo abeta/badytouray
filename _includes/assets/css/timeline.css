@@ -1,8 +1,6 @@
 #timeline {
     position: relative;
     padding: 2em 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
 }
 #timeline h3 {
     font-size: 38px;
@@ -28,10 +26,6 @@
     display: block;
 }
 @media only screen and (min-width: 1170px) {
-    #timeline {
-        margin-top: 3em;
-        margin-bottom: 3em;
-    }
     #timeline::before {
         left: 50%;
         margin-left: -2px;
