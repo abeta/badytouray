@@ -1,0 +1,14 @@
+{% assign items = (site.shop  | where: 'published', 1 | sort: 'order') %}
+<div class="row equal">
+{% for item in items limit:6 %}
+  <div class="col-sm-4 col-md-3">
+    <a class="thumb" href="{{ site.url }}{{ item.url }}" >
+      <figure>
+        <div class="thumb-square img" style="background-image: url(//cdn.donlabs.com/263x0/badytouray/{{ item.image }})"></div>
+      </figure>
+      <h3 class="text-center">{{ item.title }}</h3>
+      <p class="text-center">&pound;{{ item.price }}</p>
+    </a><br>
+  </div>
+  {% endfor %}
+</div>
