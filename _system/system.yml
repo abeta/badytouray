@@ -7,6 +7,9 @@ fights:
     title: Fights
     icon: trophy
     items:
+        fights:
+            title: Fights
+            icon: trophy
         locations:
             title: Locations
             icon: map-marker
