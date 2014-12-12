@@ -148,13 +148,13 @@
     position: absolute;
     content: '';
     bottom: 0;
+    border-color:#09F transparent  transparent transparent;
+    margin: 0 -20px;
 }
 .subnav::before {
-    border-color: transparent #09F transparent transparent;
     right: 100%;
 }
 .subnav::after {
-    border-color: transparent transparent transparent #09F;
     left: 100%;
 }
 .navbar .subnav ul.nav{
