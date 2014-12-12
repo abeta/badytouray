@@ -130,5 +130,6 @@
 .subnav {
     position: absolute;
     top: 100%;
-    background-color: #09F
+    background-color: #09F;
+    font-size: 14px;
 }
