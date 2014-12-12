@@ -128,13 +128,14 @@
     }
 }
 .navbar .subnav {
+    position: absolute;
+    top: 100%;
     background-color: #09F;
     font-size: 14px;
     min-height: 40px;
 }
 .navbar .subnav ul.nav{
     top: 0;
-    margin: 0;
 }
 .subnav .navbar-nav>li>a {
     padding: 10px;
