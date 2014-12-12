@@ -1,4 +1,4 @@
-  <div id="carousel" class="carousel slide fh" data-ride="carousel">
+  <div id="carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
     <div class="container rel">
       <ol class="carousel-indicators">
@@ -11,11 +11,11 @@
     </div>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner fh">
+    <div class="carousel-inner">
       {% capture i %}0{% endcapture %}
       {% for item in include.category %}
       <a class="item fh {% if {{i}} == '0' %}active{% endif %}" href="{{ site.url }}{{ item.url }}">
-        <div class="banner fh" style="background-image:url(http://cdn.donlabs.com/1280x720/badytouray/{{ item.image }})"></div>
+        <div class="banner" style="background-image:url(http://cdn.donlabs.com/1280x720/badytouray/{{ item.image }})"></div>
         <div class="next_fight">
           <h3 class="box">{{ item.title }}</h3>
           <span class="box h4 text-info">&pound;{{ item.price }}</span>
