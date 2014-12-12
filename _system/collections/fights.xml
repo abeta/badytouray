@@ -13,16 +13,16 @@
             </field>
         </fieldset>
         <fieldset name="tickets">
-            <field name="ticket_1" type="text" label="Ticket 1 Name" filter="string" class="form-control" default="Standard Ticket" />
-            <field name="price_1" type="text" label="Ticket 1 Price" filter="int" class="form-control" />
-            <field name="ticket_2" type="text" label="Ticket 2 Name" filter="string" class="form-control" default="VIP Ticket" />
-            <field name="price_2" type="text" label="Ticket 2 Price" filter="int" class="form-control" />
-            <field name="ticket_3" type="text" label="Ticket 3 Name" filter="string" class="form-control" default="Ringside Ticket" /> />
-            <field name="price_3" type="text" label="Ticket 3 Price" filter="int" class="form-control" />
-            <field name="ticket_4" type="text" label="Ticket 4 Name" filter="string" class="form-control" />
-            <field name="price_4" type="text" label="Ticket 4 Price" filter="int" class="form-control" />
-            <field name="ticket_5" type="text" label="Ticket 5 Name" filter="string" class="form-control" />
-            <field name="price_5" type="text" label="Ticket 5 Price" filter="int" class="form-control" />
+            <field name="ticket[1]" type="text" label="Ticket 1 Name" filter="string" class="form-control" default="Standard Ticket" />
+            <field name="price[1]" type="text" label="Ticket 1 Price" filter="int" class="form-control" />
+            <field name="ticket[2]" type="text" label="Ticket 2 Name" filter="string" class="form-control" default="VIP Ticket" />
+            <field name="price[2]" type="text" label="Ticket 2 Price" filter="int" class="form-control" />
+            <field name="ticket[3]" type="text" label="Ticket 3 Name" filter="string" class="form-control" default="Ringside Ticket" /> />
+            <field name="price[3]" type="text" label="Ticket 3 Price" filter="int" class="form-control" />
+            <field name="ticket[4]" type="text" label="Ticket 4 Name" filter="string" class="form-control" />
+            <field name="price[4]" type="text" label="Ticket 4 Price" filter="int" class="form-control" />
+            <field name="ticket[5]" type="text" label="Ticket 5 Name" filter="string" class="form-control" />
+            <field name="price[5]" type="text" label="Ticket 5 Price" filter="int" class="form-control" />
         </fieldset>
     </fields>
 </form>

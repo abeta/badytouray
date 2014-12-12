@@ -13,10 +13,10 @@ shop:
     title: Shop
     icon: shopping-cart
     items:
-        produts:
+        shop:
             title: Produts
             icon: shopping-cart
-        categories:
+        shop_categories:
             title: Categories
             icon: folder
     
