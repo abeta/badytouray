@@ -67,7 +67,7 @@
       </div>
     </div>
     {% if page.collection contains 'shop' or page.slug contains 'shop' %}
-    <div id="subnav" class="navbar subnav affix" role="navigation">
+    <div id="subnav" class="navbar subnav affix">
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-left">
         {% assign categories = (site.shop_categories | where: 'published', 1 | sort: 'order') %}
