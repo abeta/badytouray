@@ -25,18 +25,18 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="{{ site.title }}"/>
     <meta property="og:locale" content="{{ site.locale }}"/>
-    <meta property="og:url" content="{{ site.url }}{{ page.url | remove:"index" | remove:".html" }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url | remove:"index.html" }}" />
     {% if site.facebook_app %}<meta property="fb:app_id" content="{{ site.facebook_app }}" />{% endif %}
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@{{ site.twitter }}"/>
+    <meta name="twitter:site" content="@{{ site.profiles.twitter }}"/>
     <meta name="twitter:domain" content="{{ site.url }}"/>
-    <meta name="twitter:creator" content="@{{ site.twitter }}"/>
+    <meta name="twitter:creator" content="@{{ site.profiles.twitter }}"/>
     
   </head>
   <body data-spy="scroll" data-target=".navbar-inverse">
   <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
-  <div id="nav" class="navbar navbar-inverse affix{% unless page.banner == 'false' %}-top"{% endunless %} role="navigation">
+  <div id="nav" class="navbar navbar-inverse affix{% unless page.collection contains 'shop' %}-top"{% endunless %} role="navigation">
     <div class="container text-center">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
