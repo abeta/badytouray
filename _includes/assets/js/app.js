@@ -186,6 +186,6 @@ $( "#contactForm" ).submit(function( event ) {
         });
 });
 
-$('ticket_name').on('change', function() {
-    $('item_name').val($('fight_name').text() + ' ' + $("#ticket_name option:selected").text());
+$('#ticket_name').on('change', function() {
+    $('#item_name').val($('#fight_name').text() + ' ' + $("#ticket_name option:selected").text());
 });
