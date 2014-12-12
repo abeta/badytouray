@@ -154,7 +154,7 @@
     right: 100%;
 }
 .subnav::after {
-    border-color: transparent #09F transparent transparent;
+    border-color: transparent transparent transparent #09F;
     left: 100%;
 }
 .navbar .subnav ul.nav{
