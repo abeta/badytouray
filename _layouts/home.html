@@ -3,6 +3,12 @@ layout: default
 ---
   {% assign next_fight = (site.fights | where: 'published', 1 | sort: 'date' | last) %}
   
+  {% capture tickets %}{% for i in (1..5) %}{{ next_fight["ticket_" + {{ i }}] }}|{% endfor %}{% endcapture %}
+  {% assign tickets = (tickets | split: '|') %}
+  
+  {% capture prices %}{% for i in (1..5) %}{{ next_fight["price_" + {{ i }}] }}|{% endfor %}{% endcapture %}
+  {% assign prices = (prices | split: '|') %}
+  
   {% assign video = (page.youtube | split: 'v=') %}
   {% if video[1] contains '&' %}
      {% assign video = (video[1] | split: '&') %}
@@ -10,7 +16,6 @@ layout: default
   {% else %}
      {% capture id %}{{ video[1] }}{% endcapture %}
   {% endif %}
-  .versus
   <div class="next_fight">
     <h3 class="text-info">Next Fight</h3>
     <h3 class="versus">
@@ -19,7 +24,7 @@ layout: default
     </h3>
     <div>
       <div class="datebox" id="countdown" data-date="{{ next_fight.date }}"></div>
-      {% if next_fight.price %}<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info btn-lg" style="margin-top:-28px">Buy Tickets</button>{% endif %}
+      {% if prices %}<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info btn-lg" style="margin-top:-28px">Buy Tickets</button>{% endif %}
     </div>
   </div>
   
@@ -54,6 +59,16 @@ layout: default
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Price</label>
         <div class="col-sm-7">{{ next_fight.price }}</div>
+      </div>
+      <div class="form-group">
+        <label for="quantity" class="col-sm-4 control-label">Ticket Type</label>
+        <div class="col-sm-7">
+          <select name="amount" class="form-control" onchange="">
+            {% for price in prices %}
+            <option value="{{ price }}">{{ tickets[{{forloop.index}}] }}</option>
+            {% endfor %}
+          </select>
+        </div>
       </div>
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Quantity</label>
