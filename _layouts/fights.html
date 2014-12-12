@@ -16,15 +16,15 @@ layout: default
       <li class="box">
         {% assign won = (site.fights | where: 'published', 1 | where: 'result' 'w') %}
         {{ won | size }}
-        <div class="h3 text-success">Won</div>
+        <div class="h4 text-success">Won</div>
       <li class="box">
         {% assign lost = (site.fights | where: 'published', 1 | where: 'result' 'l') %}
         {{ lost | size }}
-        <div class="h3 text-danger">Lost</div>
+        <div class="h4 text-danger">Lost</div>
       <li class="box">
         {% assign draw = (site.fights | where: 'published', 1 | where: 'result' 'd') %}
         {{ draw | size }}
-        <div class="h3 text-warning">Draw</div>
+        <div class="h4 text-warning">Draw</div>
     </ul>
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
