@@ -131,7 +131,8 @@
 .navbar .subnav {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 15px;
+    right: 15px;
     background-color: #09F;
     font-size: 14px;
     min-height: 40px;
