@@ -14,7 +14,7 @@
     <div class="carousel-inner fh">
       {% capture i %}0{% endcapture %}
       {% for item in include.category %}
-      <div class="item fh {% if {{i}} == '0' %}active{% endif %}"><a href="{{ site.url }}{{ item.url }}">
+      <div class="item fh {% if {{i}} == '0' %}active{% endif %}"><a class="fh" href="{{ site.url }}{{ item.url }}">
         <div class="banner" style="background-image:url(http://cdn.donlabs.com/1280x720/badytouray/{{ item.image }})"></div>
         <div class="next_fight">
         <h3 class="box">{{ item.title }}</h3>
