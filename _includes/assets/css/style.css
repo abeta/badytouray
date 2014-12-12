@@ -547,6 +547,8 @@ body .don-share {
 }
 
 .fight-stats {
+    margin: 0;
+    padding: 0;
     text-align: center;
     float: right;
 }
