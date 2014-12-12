@@ -144,6 +144,7 @@
 .subnav .navbar-nav>li>a:hover {
     background-color:#06c;
 }
-.subnav .navbar-nav>li.active>a {
+.subnav .navbar-nav>li.active>a,
+.subnav .navbar-nav>li.active>a:hover {
     background-color:#fff;
 }
