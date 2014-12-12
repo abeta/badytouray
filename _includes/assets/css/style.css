@@ -1,5 +1,6 @@
 html, body, .fh {
     height:100%;
+    display: block;
 }
 body {
     position: relative;
