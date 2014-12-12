@@ -72,11 +72,18 @@
         <ul class="nav navbar-nav nav-left">
         {% assign categories = (site.shop_categories | where: 'published', 1 | sort: 'order') %}
         {% for item in categories %}
-          {% assign pagecount = forloop.length | divided_by: 2 %}
           <li {% if item.slug == page.slug org item.slug == page.category %}class="active"{% endif %}>
             <a href="{{site.url}}{{ item.url }}">{{ item.title }}</a>
           </li>
         {% endfor %}
+        </ul>
+        <ul class="nav navbar-nav nav-right">
+          <li>
+            <a href="#"><i class="fa fa-shopping-cart"></i> 0 Items (&pound;0)</a>
+          </li>
+          <li>
+            <a href="#">Checkout</a>
+          </li>
         </ul>
       </div>
     </div></div>
