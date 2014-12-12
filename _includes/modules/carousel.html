@@ -15,7 +15,7 @@
       {% capture i %}0{% endcapture %}
       {% for item in include.params.category %}
       <a class="item {% if {{i}} == '0' %}active{% endif %}" href="{{ site.url }}{{ item.url }}">
-        <div class="banner" style="background-image:url(http://cdn.donlabs.com/1280x720/badytouray/{{ item.image }})"></div>
+        <div class="thumb-wide" style="background-image:url(http://cdn.donlabs.com/1280x720/badytouray/{{ item.image }})"></div>
         <div class="next_fight">
           <h3 class="box">{{ item.title }}</h3>
           <span class="box h4 text-info">&pound;{{ item.price }}</span>
