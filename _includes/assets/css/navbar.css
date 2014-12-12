@@ -147,9 +147,9 @@
     width: 0px;
     position: absolute;
     content: '';
-    bottom: 0;
+    bottom: -40px;
     border-color:#09F transparent  transparent transparent;
-    margin: 0 -20px;
+    margin: 0 -40px;
 }
 .subnav::before {
     right: 100%;
