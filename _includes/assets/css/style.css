@@ -551,6 +551,7 @@ body .don-share {
     padding: 0;
     text-align: center;
     float: right;
+    list-style: none;
 }
 .fight-stats li {
     float: left;
