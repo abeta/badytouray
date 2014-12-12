@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-{% include module module="carousel" category=site.shop style="raw" %}
-
 <div class="section" id="content">
   <div class="container">
+    {% include module module="carousel" category=site.shop style="raw" %}
     {{ content }}
     <br>
     {% assign items = (site.shop_categories | where: 'published', 1 | sort: 'order') %}
