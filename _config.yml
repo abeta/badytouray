@@ -64,11 +64,11 @@ collections:
         output: true
         permalink: 'shop/:path.html'
     fights:
-        output: true
+        output: false
     videos:
         output: false
     sponsors:
-        output: true
+        output: false
 facebook_gallery:
     exclude:
         - 'Timeline Photos'
