@@ -16,7 +16,7 @@ layout: default
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
     {% for item in fights reversed %}
-      <div class="position: absolute; margin-top: -40px; width: 100%;-block" id="{{ item.slug }}">
+      <div class="timeline-block" id="{{ item.slug }}">
         {% capture currentyear %}{{ item.date | date: "%Y" }}{% endcapture %}
         {% if currentyear != year %}
           {% capture year %}{{ currentyear }}{% endcapture %}
