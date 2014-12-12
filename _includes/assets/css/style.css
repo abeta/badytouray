@@ -396,18 +396,6 @@ a.thumb, a.thumb:hover {
 .black, .black *, .box * {
     color: #fff;
 }
-.text-info {
-    color: #09f;
-}
-.text-success {
-    color: #449d44;
-}
-.text-warning {
-    color: #ec971f;
-}
-.text-danger {
-    color: #f00;
-}
 .rel {
     position: relative;
 }

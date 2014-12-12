@@ -5,4 +5,5 @@ layout: nil
 {% include assets/css/font-awesome.min.css %}
 {% include assets/css/ekko-lightbox.min.css %}
 {% include assets/css/style.css %}
+{% include assets/css/text.css %}
 {% include assets/css/timeline.css %}
