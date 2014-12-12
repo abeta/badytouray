@@ -57,6 +57,9 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .navbar.affix {
     z-index:1030;
 }
+.navbar a {
+    z-index:1;
+}
 .navbar .navbar-brand {
     padding: 5px 15px;
 }
