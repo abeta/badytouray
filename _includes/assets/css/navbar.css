@@ -137,6 +137,9 @@
 .navbar .subnav ul.nav{
     top: 0;
 }
+.subnav .navbar-nav>li>a {
+    padding: 10px;
+}
 .subnav .navbar-nav>li>a:hover {
     background-color:#06c;
 }
