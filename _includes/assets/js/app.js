@@ -46,7 +46,7 @@ $(window).scroll(function(){
 
 // navbar affix
 $(function() {
-    $('#nav').affix({
+    $('#nav.affix-top').affix({
         offset: {
             top: $('#nav').offset().top + $('#nav').height()
         }
