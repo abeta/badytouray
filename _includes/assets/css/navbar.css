@@ -133,6 +133,7 @@
     background-color: #09F;
     font-size: 14px;
     min-height: 40px;
+    left: 0;
 }
 .navbar .subnav ul.nav{
     top: 0;
