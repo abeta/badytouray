@@ -68,7 +68,7 @@ layout: default
         <div class="col-sm-7">
           <select name="amount" class="form-control" onchange="">
             {% for price in prices %}{% if price %}
-            <option value="{{ price }}">{{ tickets[forloop.index] }}</option>
+            <option value="{{ price }}">{{ tickets[forloop.index0] }}</option>
             {% endif %}{% endfor %}
           </select>
         </div>
