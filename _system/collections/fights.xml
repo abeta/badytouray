@@ -5,13 +5,24 @@
             <field name="date" type="datetime" label="Date" filter="date" class="form-control" admintable="true" />
             <field name="location" type="text" label="Location" filter="string" class="form-control" admintable="true" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
-            <field name="price" type="text" label="Ticket Price" filter="string" class="form-control" admintable="true" />
             <field name="result" type="list" default="" label="Result" description="" admintable="true">
                 <option value=""></option>
                 <option value="w">Win</option>
                 <option value="l">Lose</option>
                 <option value="d">Draw</option>
             </field>
+        </fieldset>
+        <fieldset name="tickets">
+            <field name="ticket_1" type="text" label="Ticket 1 Name" filter="int" class="form-control" />
+            <field name="price_1" type="text" label="Ticket 1 Price" filter="int" class="form-control" />
+            <field name="ticket_2" type="text" label="Ticket 2 Name" filter="int" class="form-control" />
+            <field name="price_2" type="text" label="Ticket 2 Price" filter="int" class="form-control" />
+            <field name="ticket_3" type="text" label="Ticket 3 Name" filter="int" class="form-control" />
+            <field name="price_3" type="text" label="Ticket 3 Price" filter="int" class="form-control" />
+            <field name="ticket_4" type="text" label="Ticket 4 Name" filter="int" class="form-control" />
+            <field name="price_4" type="text" label="Ticket 4 Price" filter="int" class="form-control" />
+            <field name="ticket_5" type="text" label="Ticket 5 Name" filter="int" class="form-control" />
+            <field name="price_5" type="text" label="Ticket 5 Price" filter="int" class="form-control" />
         </fieldset>
     </fields>
 </form>
