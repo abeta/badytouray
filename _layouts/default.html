@@ -66,9 +66,8 @@
         </ul>
       </div>
     </div>
-  </div>
   {% if page.collection contains 'shop' or page.slug contains 'shop' %}
-  <div id="subnav" class="navbar affix" role="navigation">
+  <div id="subnav" class="navbar subnav affix" role="navigation">
     <div class="text-center">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -92,6 +91,7 @@
     </div>
   </div>
   {% endif %}
+  </div>
   
   {{content}}
     

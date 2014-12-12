@@ -127,3 +127,7 @@
         font-size: 28px;
     }
 }
+.subnav {
+    position: absolute;
+    top: 100%;
+}
