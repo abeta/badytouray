@@ -79,7 +79,7 @@ relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
     provider: '1'
-v: 15n
+v: 15o
 baseurl: /
 paypal: lil_blak@hotmail.co.uk
 gems:
