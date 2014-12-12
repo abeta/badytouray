@@ -66,17 +66,8 @@
         </ul>
       </div>
     </div>
-  {% if page.collection contains 'shop' or page.slug contains 'shop' %}
-  <div id="subnav" class="navbar subnav affix" role="navigation">
-    <div class="text-center">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
+    {% if page.collection contains 'shop' or page.slug contains 'shop' %}
+    <div id="subnav" class="navbar subnav affix" role="navigation">
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-left">
         {% assign categories = (site.shop_categories | where: 'published', 1 | sort: 'order') %}
@@ -89,8 +80,7 @@
         </ul>
       </div>
     </div>
-  </div>
-  {% endif %}
+    {% endif %}
   </div>
   
   {{content}}
