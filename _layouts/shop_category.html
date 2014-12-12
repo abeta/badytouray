@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% include modules/banner.html %}
+
+<div class="section" id="content">
+  <div class="container">
+    {{ content }}
+    <br>
+    {% assign items = (site.shop_categories | where: 'published', 1 | sort: 'order') %}
+    <div class="row equal">
+    {% for item in items %}
+      <div class="col-sm-6 col-md-4">
+        <a class="thumb" href="{{ site.url }}{{ item.url }}" >
+          <figure>
+            <div class="thumb-wide img" style="background-image: url(//cdn.donlabs.com/432x243/badytouray/{{ item.image }})"></div>
+          </figure>
+          <h3>{{ item.title }}</h3>
+        </a><br>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+

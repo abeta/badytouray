@@ -41,6 +41,12 @@ defaults:
             type: pages
         values:
             layout: page
+    -
+        scope:
+            path: ''
+            type: shop_categories
+        values:
+            layout: shop_category
 collections:
     content:
         output: true
