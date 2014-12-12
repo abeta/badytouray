@@ -6,6 +6,10 @@ content:
 fights:
     title: Fights
     icon: trophy
+    items:
+        locations:
+            title: Locations
+            icon: map-marker
 videos:
     title: Videos
     icon: video-camera

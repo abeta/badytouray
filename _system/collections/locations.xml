@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+        <fieldset name="options">
+            <field name="address" type="text" label="Address" filter="string" class="form-control" />
+            <field name="postcode" type="text" label="Post Code" filter="string" class="form-control" />
+            <field name="city" type="text" label="City" filter="string" class="form-control" />
+            <field name="county" type="text" label="County" filter="string" class="form-control" />
+        </fieldset>
+    </fields>
+</form>
