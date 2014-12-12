@@ -47,6 +47,12 @@ defaults:
             type: shop_categories
         values:
             layout: shop_category
+    -
+        scope:
+            path: ''
+            type: shop
+        values:
+            layout: shop
 collections:
     content:
         output: true
