@@ -47,8 +47,10 @@ collections:
         permalink: ':path.html'
     shop:
         output: true
+        permalink: 'shop/:path.html'
     shop_categories:
         output: true
+        permalink: 'shop/:path.html'
     fights:
         output: true
     videos:
