@@ -62,7 +62,7 @@ layout: default
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Ticket Type</label>
         <div class="col-sm-7">
-          <select name="amount" class="form-control" onchange="">
+          <select id="ticket_name" name="amount" class="form-control" onchange="document.getElementById('item_name').value = document.getElementById('ticket_name').value + ' ' + document.getElementById('fight_name').value">
             {% for price in prices %}{% if price %}
             <option value="{{ price }}">{{ tickets[forloop.index0] }} (&pound;{{ price }})</option>
             {% endif %}{% endfor %}
@@ -87,7 +87,7 @@ layout: default
         </div>
       </div>
     <!--PAYPAL VARIABLES-->
-        <input type='hidden' name='item_name' value='Bady vs. {{ next_fight.title }}'>
+        <input type='hidden' id='item_name' name='item_name' value='Bady vs. {{ next_fight.title }}'>
     	<input type='hidden' name='cmd' value='_xclick'>
     	<input type='hidden' name='rm' value='2'>
     	<input type="hidden" name="business" value="{{ site.paypal }}" />
