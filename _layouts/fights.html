@@ -12,7 +12,11 @@ layout: default
 <div class="grey section" id="content">
   <div class="container"> 
     {{ content }}
-    
+    <div class="pull-right">
+        <div class="box">10<div class="text-info">Won</div></div>
+        <div class="box">10<div class="text-info">Lost</div></div>
+        <div class="box">10<div class="text-info">Draw</div></div>
+    </div>
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
     {% for item in fights reversed %}
