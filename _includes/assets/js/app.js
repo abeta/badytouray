@@ -187,5 +187,5 @@ $( "#contactForm" ).submit(function( event ) {
 });
 
 $('#ticket_name').on('change', function() {
-    $('#item_name').val($("#ticket_name option:selected").html() + ' ' + $('#fight_name').html());
+    $('#item_name').val($("#ticket_name option:selected").html() + ' - ' + $('#fight_name').html());
 });
