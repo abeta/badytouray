@@ -139,5 +139,7 @@
 }
 .subnav .navbar-nav>li>a:hover {
     background-color:#06c;
-    /*text-shadow: 0px 1px 1px #000, 1px 0px 1px #000, 0px -1px 1px #000, -1px 0px 1px #000;*/
+}
+.subnav .navbar-nav>li.active>a {
+    background-color:#fff;
 }
