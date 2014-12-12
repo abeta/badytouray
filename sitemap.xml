@@ -7,6 +7,7 @@ layout: nil
   {% for collection in site.collections %}{% if collection.output %}
   {% capture key %}{{ collection[0] }}{% endcapture %}
   {% for post in site[key] %}
+  {{ collection.output }}
   <url>
     <loc>{{ site_url }}{{ post.url | remove: 'index.html' }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
