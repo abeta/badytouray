@@ -12,13 +12,13 @@ layout: default
 <div class="grey section" id="content">
   <div class="container"> 
     {{ content }}
-    <ul class="fight-stats h2">
+    <ul class="fight-stats h1">
       <li class="box">
-        10<div class="h4 text-success">Won</div>
+        10<div class="h3 text-success">Won</div>
       <li class="box">
-        10<div class="h4 text-danger">Lost</div>
+        10<div class="h3 text-danger">Lost</div>
       <li class="box">
-        10<div class="h4 text-warning">Draw</div>
+        10<div class="h3 text-warning">Draw</div>
     </ul>
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
