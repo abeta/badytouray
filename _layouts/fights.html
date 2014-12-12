@@ -12,20 +12,17 @@ layout: default
 <div class="grey section" id="content">
   <div class="container"> 
     {{ content }}
-    <div class="pull-right text-center">
-        <span class="box pull-left">
-          <span class="h2">10</span><br>
-          <span class="h4 text-info">Won</span>
-        </span>&nbsp;
-        <span class="box pull-left">
-          <span class="h2">10</span><br>
-          <span class="h4 text-info">Lost</span>
-        </span>&nbsp;
-        <span class="box pull-left">
-          <span class="h2">10</span><br>
-          <span class="h4 text-info">Draw</span>
-        </span>
-    </div>
+    <ul class="fight-stats">
+      <li>
+        <span class="h2">10</span><br>
+        <span class="h4 text-info">Won</span>
+      <li>
+        <span class="h2">10</span><br>
+        <span class="h4 text-info">Lost</span>
+      <li>
+        <span class="h2">10</span><br>
+        <span class="h4 text-info">Draw</span>
+    </ul>
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
     {% for item in fights reversed %}
