@@ -14,14 +14,13 @@
     <div class="carousel-inner fh">
       {% capture i %}0{% endcapture %}
       {% for item in include.category %}
-      <div class="item fh {% if {{i}} == '0' %}active{% endif %}">
+      <div class="item fh {% if {{i}} == '0' %}active{% endif %}"><a href="{{ site.url }}{{ item.url }}">
         <div class="banner" style="background-image:url(http://cdn.donlabs.com/1280x720/badytouray/{{ item.image }})"></div>
         <div class="next_fight">
-        <h3 class="box">{{ item.title }}</h3><br>
-        <span class="box">{{ item.price }}</span><br>
-        <a class="h4 box box-red" href="{{ site.url }}{{ item.url }}">Read More</a>
+        <h3 class="box">{{ item.title }}</h3>
+        <span class="box">{{ item.price }}</span>
         </div>
-      </div>
+      </a></div>
       {% capture i %}{{ i | plus:1 }}{% endcapture %}
       {% endfor %}
     </div>
