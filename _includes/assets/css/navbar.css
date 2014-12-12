@@ -136,6 +136,7 @@
 }
 .navbar .subnav ul.nav{
     top: 0;
+    min-height: 40px;
 }
 .subnav .navbar-nav>li>a {
     padding: 10px;
