@@ -5,9 +5,11 @@ layout: default1
   
   {% capture tickets %}{% for i in (1..5) %}{{ next_fight["ticket_" + i] }}|{% endfor %}{% endcapture %}
   {% assign tickets = (tickets | split: '|') %}
+        {{ tickets | jsonify }}
   
   {% capture prices %}{% for i in (1..5) %}{{ next_fight["price_" + i] }}|{% endfor %}{% endcapture %}
   {% assign prices = (prices | split: '|') %}
+        {{ prices | jsonify }}
   
   {% assign video = (page.youtube | split: 'v=') %}
   {% if video[1] contains '&' %}
@@ -31,8 +33,7 @@ layout: default1
   <div class="fh" id="home" data-video="{{ id }}"></div>
   <div class="section" id="content">
     <div class="container">
-      <h1 class="page-header">{{ page.title }}
-        {{ prices | jsonify }}</h1>
+      <h1 class="page-header">{{ page.title }}</h1>
       <p class="lead">{{ content | strip_html | newline_to_br }}</p>
     </div>
   </div>
