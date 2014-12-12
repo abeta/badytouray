@@ -6,7 +6,7 @@ layout: default1
   {% capture tickets %}{% for i in (1..5) %}{{ next_fight["ticket_" + i] }}|{% endfor %}{% endcapture %}
   {% assign tickets = (tickets | split: '|') %}
   {% assign ticket1 = "ticket_1" %}
-        {{ tickets | jsonify }}{{ next_fight[ticket1] }}
+        {{ tickets | jsonify }}{{ next_fight[{{ticket1}}] }}
   
   {% capture prices %}{% for i in (1..5) %}{{ next_fight["price_" + i] }}|{% endfor %}{% endcapture %}
   {% assign prices = (prices | split: '|') %}
