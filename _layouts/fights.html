@@ -14,11 +14,11 @@ layout: default
     {{ content }}
     <ul class="fight-stats h2">
       <li class="box">
-        10<div class="h4 text-info">Won</div>
+        10<div class="h4 text-success">Won</div>
       <li class="box">
-        10<div class="h4 text-info">Lost</div>
+        10<div class="h4 text-danger">Lost</div>
       <li class="box">
-        10<div class="h4 text-info">Draw</div>
+        10<div class="h4 text-warning">Draw</div>
     </ul>
     {% assign fights = (site.fights | where: 'published', 1 | sort: 'date') %}
     <div id="timeline" class="container">
