@@ -3,7 +3,7 @@
     <fields>
         <fieldset name="options">
             <field name="date" type="datetime" label="Date" filter="date" class="form-control" admintable="true" />
-            <field name="location" type="text" label="Location" filter="string" class="form-control" admintable="true" />
+            <field name="location" type="itemlist" label="Location" filter="string" app="locations" class="form-control" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
             <field name="result" type="list" default="" label="Result" description="" admintable="true">
                 <option value=""></option>
