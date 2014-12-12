@@ -1,4 +1,13 @@
 ---
 layout: nil
 ---
-{{ site | jsonify }}
+{% for collection in site.collections %}
+  {% for post in site[collection] %}
+  <url>
+    <loc>{{ site_url }}{{ post.url | remove: 'index' }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>{% if post.url == "/" or post.url == "/index.html" %}1.0{% else %}0.7{% endif %}</priority>
+  </url>
+  {% endfor %}
+{% endfor %}
