@@ -561,6 +561,6 @@ body .don-share {
     width: 50%;
 }
 .fight-stats li {
-    float: left;
+    display: inline-block;
     margin-right: 10px;
 }
