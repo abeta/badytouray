@@ -138,6 +138,24 @@
     font-size: 14px;
     min-height: 40px;
 }
+.subnav::before,
+.subnav::after {
+    display: inline-block;
+    border-style: solid;
+    border-width: 20px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    content: '';
+}
+.subnav::before {
+    border-color: transparent #09F transparent transparent;
+    right: 100%;
+}
+.subnav::after {
+    border-color: transparent #09F transparent transparent;
+    left: 100%;
+}
 .navbar .subnav ul.nav{
     top: 0;
 }
