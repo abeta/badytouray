@@ -8,3 +8,4 @@ layout: nil
 {% include assets/css/navbar.css %}
 {% include assets/css/text.css %}
 {% include assets/css/timeline.css %}
+{% include assets/css/simplecart.css %}
