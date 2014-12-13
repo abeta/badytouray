@@ -5,8 +5,8 @@ layout: default
 <div class="section shop" id="shop" >
   <div class="container">
     <div class="row">
-      <div class="col-sm-2"><img src="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}"></div>
-      <div class="col-sm-4">
+      <div class="col-sm-4"><img src="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}"></div>
+      <div class="col-sm-8">
         <form class="simpleCart_shelfItem">
           <input class="item_Image" type="hidden" value="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}">
           <h1 class="h2 media-heading item_name page-heading">{{ page.title }}</h1>
@@ -14,8 +14,8 @@ layout: default
           <div>{{ content }}</div>
           <div class="form-horizontal">
             <div class="form-group">
-              <label for="item_Size" class="col-sm-4">Size</label>
-              <div class="col-sm-8">
+              <label for="item_Size" class="col-sm-2">Size</label>
+              <div class="col-sm-4">
                 <select class="form-control item_Size" id="item_Size">
                   {% for size in page.sizes %}
                   <option value="{{ size.name }}">{{ size.name }}</option>
@@ -24,8 +24,8 @@ layout: default
               </div>
             </div>
             <div class="form-group">
-              <label for="item_Quantity" class="col-sm-4">Quantity</label>
-              <div class="col-sm-8">
+              <label for="item_Quantity" class="col-sm-2">Quantity</label>
+              <div class="col-sm-4">
                 <select class="item_Quantity form-control" id="item_Quantity">
                   {% for i in (1..10) %}
                   <option value="{{i}}">{{i}}</option>
