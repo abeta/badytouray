@@ -13,9 +13,7 @@ sharing:
         - facebook
         - twitter
         - google
-        - linkedin
         - pinterest
-        - stumbleupon
     limit: '3'
 profiles:
     provider:
@@ -63,14 +61,6 @@ collections:
     shop_categories:
         output: true
         permalink: 'shop/:path.html'
-    fights:
-        output: false
-    locations:
-        output: false
-    videos:
-        output: false
-    sponsors:
-        output: false
 facebook_gallery:
     exclude:
         - 'Timeline Photos'
@@ -85,5 +75,4 @@ v: 15p
 baseurl: /
 paypal: lil_blak@hotmail.co.uk
 gems:
-  - jekyll-sitemap
-  
+    - jekyll-sitemap
