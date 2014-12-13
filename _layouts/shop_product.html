@@ -12,6 +12,7 @@ layout: default
           <h1 class="h2 media-heading item_name page-heading">{{ page.title }}</h1>
           <div class="h3 media-heading text-info item_price">£{{ page.price }}</div>
           <div>{{ content }}</div>
+          <div class="form-horizontal">
             <div class="form-group">
                 <label for="item_Size">Size</label>
                 <select class="form-control item_Size" id="item_Size">
@@ -28,7 +29,8 @@ layout: default
                 {% endfor %}
               </select>
             </div>
-          <br><a class="item_add btn btn-danger btn-lg" href="javascript:;"> Add to Cart </a>
+            <br><a class="item_add btn btn-danger btn-lg" href="javascript:;"> Add to Cart </a>
+          </div>
         </form>
       </div>
     </div>
