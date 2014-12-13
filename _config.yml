@@ -13,10 +13,11 @@ sharing:
         - facebook
         - twitter
         - google
+        - linkedin
         - pinterest
+        - stumbleupon
     limit: '6'
-    style: icons
-    bubbles: top
+    style: short
 profiles:
     provider:
         - facebook
