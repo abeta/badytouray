@@ -1,5 +1,7 @@
 .simpleCart_items {
     display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 .headerRow, 
 .itemRow {
