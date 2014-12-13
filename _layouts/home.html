@@ -21,7 +21,7 @@ layout: default
       {{ next_fight.title }}
     </h3>
     <div>
-      <div class="datebox" id="countdown" data-date="{{ next_fight.date }}"></div>
+      <div class="datebox hidden-xs" id="countdown" data-date="{{ next_fight.date }}"></div>
       {% if next_fight.tickets %}<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info btn-lg" style="margin-top:-28px">Buy Tickets</button>{% endif %}
     </div>
   </div>
