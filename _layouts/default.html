@@ -78,8 +78,11 @@
         {% endfor %}
         </ul>
         <ul class="nav navbar-nav nav-right">
-          <li>
-            <a href="#">Basket: <span class="simpleCart_quantity"></span> Items <span class="label label-danger simpleCart_total"></span> <span classs="glyphicon glyphicon-chevron-down"></span></a>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Basket: <span class="simpleCart_quantity"></span> Items <span class="label label-danger simpleCart_total"></span> <span classs="glyphicon glyphicon-chevron-down"></span></a>
+            <div class="dropdown-menu">
+            hello
+            </div>
           </li>
           <li>
             <a class="btn btn-danger simpleCart_checkout" href="javascript:;">Checkout</a>
