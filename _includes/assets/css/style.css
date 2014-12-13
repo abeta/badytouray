@@ -267,7 +267,7 @@ a.thumb, a.thumb:hover {
     }
 }
 .grey {
-    background-color: #f0f0f0;
+    background: url(../pattern.png) #f0f0f0;
 }
 .black {
     background-color: #161616;
