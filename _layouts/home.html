@@ -57,6 +57,7 @@ layout: default
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Ticket Type</label>
         <div class="col-sm-7">
+        {{next_fight|jsonify}}
           <select id="ticket_name" name="amount" class="form-control">
             {% for ticket in next_fight.tickets %}{% if ticket.price %}
             <option value="{{ ticket.price }}">{{ ticket.name }} (&pound;{{ ticket.price }})</option>
