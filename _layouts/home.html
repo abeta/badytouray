@@ -15,7 +15,7 @@ layout: default
      {% capture id %}{{ video[1] }}{% endcapture %}
   {% endif %}
   <div class="next_fight">
-        {{next_fight|jsonify}}
+        {{next_fight.tickets|jsonify}}
     <h3 class="text-info">Next Fight</h3>
     <h3 class="versus">
       <span><b>Bady</b><div class="text-info">versus</div></span>
