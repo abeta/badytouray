@@ -55,6 +55,10 @@ defaults:
         values:
             layout: shop_product
 collections:
+    fights:
+        output: false
+    videos:
+        output: false
     content:
         output: true
         permalink: ':path.html'
