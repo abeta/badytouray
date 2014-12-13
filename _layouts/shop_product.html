@@ -10,9 +10,20 @@ layout: default
         <div class="simpleCart_shelfItem">
         <h1 class="h2 item_name">{{ page.title }}</h1>
         <span class="h3 text-info item_price">£{{ page.price }}</span>
-        <input type="text" value="1" class="item_Quantity"><br>
+        <select class="item_Quantity" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
         {{ content }}
-        <a class="item_add" href="javascript:;"> Add to Cart </a>
+        <a class="item_add btn btn-danger btn-lg" href="javascript:;"> Add to Cart </a>
       </div>
       </div>
     </div>
