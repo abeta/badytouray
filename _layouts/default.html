@@ -105,6 +105,15 @@
   <script src="{{site.url}}/assets/js/scripts.js?{{ site.v }}"></script>
   {% if page.collection contains 'shop' or page.slug contains 'shop' %}
   <script src="//cdnjs.cloudflare.com/ajax/libs/simplecartjs/3.0.5/simplecart.min.js"></script>
+  <script>
+    simpleCart({
+      checkout: {
+        type: "PayPal",
+        email: "{{ site.paypal }}"
+      },
+      currency: "GBP"
+    });
+  </script>
   {% endif %}
   {% include system/analytics %}
 </body>
