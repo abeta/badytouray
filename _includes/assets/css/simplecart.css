@@ -8,14 +8,14 @@
 .headerRow>div,
 .itemRow>div {
     display: table-cell;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
 }
 .headerRow>div {
     vertical-align: bottom;
     border-bottom: 2px solid #ddd;
 }
 .itemRow>div {
-    padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
     border-top: 1px solid #ddd;
 }
