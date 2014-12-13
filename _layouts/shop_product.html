@@ -11,7 +11,6 @@ layout: default
           <input class="item_Image" type="hidden" value="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}">
           <h1 class="h2 media-heading item_name page-heading">{{ page.title }}</h1>
           <div class="h3 media-heading text-info item_price">£{{ page.price }}</div>
-          {% include system/sharing %}
           <div>{{ content }}</div>
           <hr>
           <div class="form-horizontal">
@@ -38,6 +37,7 @@ layout: default
             <br><a class="item_add btn btn-danger btn-lg" href="javascript:;"> Add to Cart </a>
           </div>
         </form>
+        {% include system/sharing %}
       </div>
     </div>
   </div>
