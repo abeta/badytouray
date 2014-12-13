@@ -1,0 +1,8 @@
+.headerRow, 
+.itemRow {
+    display: table-row;
+}
+.headerRow>div,
+.itemRow>div {
+    display: table-cell;
+}
