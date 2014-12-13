@@ -14,6 +14,7 @@ layout: default
           <div>{{ content }}</div>
           <hr>
           <div class="form-horizontal">
+            {% if page.sizes %}
             <div class="form-group">
               <label for="item_Size" class="col-sm-2">Size</label>
               <div class="col-sm-2">
@@ -24,6 +25,7 @@ layout: default
                 </select>
               </div>
             </div>
+            {% endif %}
             <div class="form-group">
               <label for="item_Quantity" class="col-sm-2">Quantity</label>
               <div class="col-sm-2">
