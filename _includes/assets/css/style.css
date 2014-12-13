@@ -51,7 +51,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 body>footer {
     color: #fff;
     border-top: 1px solid #eee;
-    background: #333;
+    background:  url(../pattern.png) #333;
 }
 
 body>footer .footer-left {
@@ -267,7 +267,7 @@ a.thumb, a.thumb:hover {
     }
 }
 .grey {
-    background: url(../pattern.png) #f0f0f0;
+    background: #f0f0f0;
 }
 .black {
     background-color: #161616;
