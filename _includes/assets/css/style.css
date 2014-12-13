@@ -270,7 +270,7 @@ a.thumb, a.thumb:hover {
     background: #f0f0f0;
 }
 .black {
-    background-color: #161616;
+    background:  url(../pattern.png) #161616;
 }
 .black, .black *, .box * {
     color: #fff;
