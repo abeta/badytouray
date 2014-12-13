@@ -7,7 +7,7 @@ layout: default
     <div class="row">
       <div class="col-sm-4"><img src="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}"></div>
       <div class="col-sm-8">
-        <div class="simpleCart_shelfItem">
+        <form class="simpleCart_shelfItem">
           <input class="item_Image" type="hidden" value="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}">
           <h1 class="h2 media-heading item_name page-heading">{{ page.title }}</h1>
           <div class="h3 media-heading text-info item_price">£{{ page.price }}</div>
@@ -33,7 +33,7 @@ layout: default
             </div>
           </div>
           <br><a class="item_add btn btn-danger btn-lg" href="javascript:;"> Add to Cart </a>
-        </div>
+        </form>
       </div>
     </div>
   </div>
