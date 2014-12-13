@@ -79,10 +79,10 @@
         </ul>
         <ul class="nav navbar-nav nav-right">
           <li>
-            <a href="#">Basket: 0 Items <span class="label label-danger">&pound;0</span> <span classs="glyphicon glyphicon-chevron-down"></span></a>
+            <a href="#">Basket: <span class="simpleCart_quantity"></span> Items <span class="label label-danger simpleCart_total"></span> <span classs="glyphicon glyphicon-chevron-down"></span></a>
           </li>
           <li>
-            <a class="btn btn-danger" href="#">Checkout</a>
+            <a class="btn btn-danger simpleCart_checkout" href="javascript:;">Checkout</a>
           </li>
         </ul>
       </div>
@@ -103,6 +103,9 @@
     </div>
   </footer>
   <script src="{{site.url}}/assets/js/scripts.js?{{ site.v }}"></script>
+  {% if page.collection contains 'shop' or page.slug contains 'shop' %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/simplecartjs/3.0.5/simplecart.min.js"></script>
+  {% endif %}
   {% include system/analytics %}
 </body>
 </html>
