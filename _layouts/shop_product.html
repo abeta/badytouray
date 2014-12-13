@@ -8,9 +8,15 @@ layout: default
       <div class="col-sm-4"><img src="http://cdn.donlabs.com/400x400/badytouray/{{ page.image }}"></div>
       <div class="col-sm-8">
         <div class="simpleCart_shelfItem">
-        <h1 class="h2 media-heading item_name page-heading">{{ page.title }}</h1>
-        <span class="h3 text-info item_price">£{{ page.price }}</span>
-        <div>{{ content }}</div>
+          <h1 class="h2 media-heading item_name page-heading">{{ page.title }}</h1>
+          <span class="h3 text-info item_price">£{{ page.price }}</span>
+          <div>{{ content }}</div>
+          <select class="item_price" class="form-control">
+            {% for size in page.sizes %}
+            {% if size.price %}{% assign price = size.price %}{% else %}{% assign price = page.price %}{% endif %}
+            <option value="{{ price }}">{{ size.name }} {% unless price == size.price %}(&pound;{{ ticket.price }}){% endunless %}</option>
+            {% endif %}{% endfor %}
+          </select>
         <select class="item_Quantity" class="form-control">
             <option value="1">1</option>
             <option value="2">2</option>
