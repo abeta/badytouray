@@ -7,8 +7,6 @@ layout: default
   {% assign tickets = (tickets | split: '|') %}
   {% assign ticket1 = "ticket_1" %}
   
-  {% capture prices %}{% for i in (1..5) %}{% capture id %}price_{{i}}{% endcapture %}{{ next_fight[id] }}|{% endfor %}{% endcapture %}
-  {% assign prices = (prices | split: '|') %}
   {% assign video = (page.youtube | split: 'v=') %}
   {% if video[1] contains '&' %}
      {% assign video = (video[1] | split: '&') %}
@@ -60,8 +58,8 @@ layout: default
         <label for="quantity" class="col-sm-4 control-label">Ticket Type</label>
         <div class="col-sm-7">
           <select id="ticket_name" name="amount" class="form-control">
-            {% for price in prices %}{% if price %}
-            <option value="{{ price }}">{{ tickets[forloop.index0] }} (&pound;{{ price }})</option>
+            {% for ticket in next_fight.tickets %}{% if ticket.price %}
+            <option value="{{ ticket.price }}">{{ ticket.name }} (&pound;{{ ticket.price }})</option>
             {% endif %}{% endfor %}
           </select>
         </div>
