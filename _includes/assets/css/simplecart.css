@@ -7,6 +7,9 @@
 .itemRow {
     display: table-row;
 }
+.headerRow {
+    font-weight: bold;
+}
 .headerRow>div,
 .itemRow>div {
     display: table-cell;
