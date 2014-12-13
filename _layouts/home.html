@@ -15,7 +15,6 @@ layout: default
      {% capture id %}{{ video[1] }}{% endcapture %}
   {% endif %}
   <div class="next_fight">
-        {{next_fight.tickets|jsonify}}
     <h3 class="text-info">Next Fight</h3>
     <h3 class="versus">
       <span><b>Bady</b><div class="text-info">versus</div></span>
@@ -23,7 +22,7 @@ layout: default
     </h3>
     <div>
       <div class="datebox" id="countdown" data-date="{{ next_fight.date }}"></div>
-      {% if prices %}<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info btn-lg" style="margin-top:-28px">Buy Tickets</button>{% endif %}
+      {% if next_fight.tickets %}<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info btn-lg" style="margin-top:-28px">Buy Tickets</button>{% endif %}
     </div>
   </div>
   
