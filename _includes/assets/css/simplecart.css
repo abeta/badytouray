@@ -1,3 +1,6 @@
+.simpleCart_items {
+    display: table;
+}
 .headerRow, 
 .itemRow {
     display: table-row;
