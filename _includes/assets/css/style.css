@@ -52,6 +52,7 @@ body>footer {
     color: #fff;
     border-top: 1px solid #eee;
     background:  url(../pattern.png) #333;
+    box-shadow:0 0 15px #000;
 }
 
 body>footer .footer-left {
