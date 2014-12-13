@@ -1,10 +1,16 @@
 ---
 layout: default
 ---
-{% include modules/banner.html %}
 
 <div class="section" id="content">
   <div class="container">
-    {{ content }}
+    <div class="row">
+      <div class="col-sm-6"><img src="{{ site.url }}/{{ page.image }}"></div>
+      <div class="col-sm-6">
+        <h1 class="h2">{{ page.title }}</h1>
+        {{ content }}
+      </div>
+    </div>
+    
   </div>
 </div>
