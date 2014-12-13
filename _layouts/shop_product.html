@@ -14,7 +14,7 @@ layout: default
           <select class="item_price" class="form-control">
             {% for size in page.sizes %}
             {% if size.price %}{% assign price = size.price %}{% else %}{% assign price = page.price %}{% endif %}
-            <option value="{{ price }}">{{ size.name }} {% unless price == size.price %}(&pound;{{ ticket.price }}){% endunless %}</option>
+            <option value="{{ price }}">{{ size.name }} {% unless size.price == page.price %}(&pound;{{ ticket.price }}){% endunless %}</option>
             {% endfor %}
           </select>
         <select class="item_Quantity" class="form-control">
