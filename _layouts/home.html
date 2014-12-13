@@ -9,8 +9,6 @@ layout: default
   
   {% capture prices %}{% for i in (1..5) %}{% capture id %}price_{{i}}{% endcapture %}{{ next_fight[id] }}|{% endfor %}{% endcapture %}
   {% assign prices = (prices | split: '|') %}
-        {{ prices | jsonify }}
-  
   {% assign video = (page.youtube | split: 'v=') %}
   {% if video[1] contains '&' %}
      {% assign video = (video[1] | split: '&') %}
@@ -42,7 +40,7 @@ layout: default
   
   {% include module module="videos" class="grey" title="Videos" limit="3" %}  
   
-  {% include module module="sponsors" title="Sponsors" items=sponsors %}
+  {% include module module="shop" title="Sponsors" items=sponsors limit="3" %}
   
   
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

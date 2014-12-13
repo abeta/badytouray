@@ -1,6 +1,6 @@
 {% assign items = (site.shop  | where: 'published', 1 | sort: 'order') %}
 <div class="row equal">
-{% for item in items limit:8 %}
+{% for item in items limit:include.params.limit %}
   <div class="col-sm-4 col-md-3">
     <a class="thumb" href="{{ site.url }}{{ item.url }}" >
       <figure>
