@@ -6,5 +6,17 @@
             <field name="category" type="itemlist" label="Category" filter="string" app="shop_categories" class="form-control" admintable="true" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
         </fieldset>
+        <fieldset name="sizes">
+            <field name="sizes" type="multiform" filter="array">
+                <field name="name" type="text" label="Name" filter="string" class="form-control" />
+                <field name="price" type="text" label="Price" filter="int" class="form-control" />
+            </field>
+        </fieldset>
+        <fieldset name="colours">
+            <field name="colours" type="multiform" filter="array">
+                <field name="name" type="text" label="Name" filter="string" class="form-control" />
+                <field name="image" type="media" label="Image" filter="string" class="form-control" />
+            </field>
+        </fieldset>
     </fields>
 </form>
