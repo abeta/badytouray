@@ -5,5 +5,8 @@
             <field name="youtube" type="url" label="YouTube Link" filter="string" class="form-control" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
         </fieldset>
+        <fieldset name="test">
+            <field name="test" type="multiform" label="Test" filter="array" />
+        </fieldset>
     </fields>
 </form>
