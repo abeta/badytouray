@@ -14,7 +14,7 @@ sharing:
         - twitter
         - google
         - pinterest
-    limit: '3'
+    limit: '6'
 profiles:
     provider:
         - facebook
