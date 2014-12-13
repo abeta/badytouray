@@ -13,14 +13,12 @@ layout: default
           <div>{{ content }}</div>
           <div class="form-inline">
             <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon">Size</div>
-                <select class="form-control">
+                <label for="item_Size">Size</label>
+                <select class="form-control item_Size" id="item_Size">
                   {% for size in page.sizes %}
                   <option value="{{ size.name }}">{{ size.name }}</option>
                   {% endfor %}
                 </select>
-              </div>
             </div>
             <div class="form-group">
               <div class="input-group">
