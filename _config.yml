@@ -55,6 +55,10 @@ defaults:
         values:
             layout: shop_product
 collections:
+    fights:
+        output: false
+    videos:
+        output: false
     content:
         output: true
         permalink: ':path.html'
@@ -64,11 +68,6 @@ collections:
     shop_categories:
         output: true
         permalink: 'shop/:path.html'
-facebook_gallery:
-    exclude:
-        - 'Timeline Photos'
-        - 'Cover Photos'
-        - 'Profile Pictures'
 description: 'Bady "Terminator" Touray'
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
