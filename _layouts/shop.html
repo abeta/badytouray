@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="section shop" id="content">
   <div class="container">
-    {% include assign products = (site.shop | where: 'published', 1 | sort: 'order') %}
+    {% assign products = (site.shop | where: 'published', 1 | sort: 'order') %}
     {% include module module="carousel" category=products style="raw" %}
     {{ content }}
     <br>

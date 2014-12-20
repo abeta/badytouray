@@ -20,7 +20,8 @@ layout: default
               <div class="col-sm-2">
                 <select class="form-control item_Size" id="item_Size">
                   {% for size in page.sizes %}
-                  <option value="{{ size.name }}">{{ size.name }}</option>
+                  {% capture size_name %}{% if size[1] %}{{ size[1].name }}{% else %}{{ size.name }}{% endif %}{% endcapture %}
+                  <option value="{{ size_name }}">{{ size_name }}</option>
                   {% endfor %}
                 </select>
               </div>
