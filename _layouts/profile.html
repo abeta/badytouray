@@ -29,31 +29,9 @@ layout: default
                 <td><strong>Hometown</strong></td>
                 <td>{{ page.hometown }}</td>
               </tr>
-              {% capture weight_class %}
-              {% if page.weight > 90.7 %}Heavyweight
-              {% elsif page.weight > 79.4 %}Cruiserweight
-              {% elsif page.weight > 76.2 %}Light heavyweight
-              {% elsif page.weight > 72.5 %}Super middleweight	
-              {% elsif page.weight > 69.9 %}Middleweight
-              {% elsif page.weight > 66.7 %}Super welterweight
-              {% elsif page.weight > 63.5 %}Welterweight
-              {% elsif page.weight > 61.2 %}Super lightweight
-              {% elsif page.weight > 59 %}Lightweight
-              {% elsif page.weight > 57.2 %}Super featherweight
-              {% else %}Featherweight
-              {% endif %}
-              {% endcapture %}
-              
-              {% assign weight_stone = (page.weight | times: 0.157473 | round) %}
-              {% assign weight_lbs = (page.weight | modulo: weight_stone | times: 2.2) %}
-              
               <tr>
                 <td><strong>Weight Class</strong></td>
-                <td>{{ weight_class }}</td>
-              </tr>
-              <tr>
-                <td><strong>Weight</strong></td>
-                <td>{{ weight_stone }} stone, {{ weight_lbs }}lbs </td>
+                <td>{{ page.weight_class }}</td>
               </tr>
               <tr>
                 <td><strong>Height</strong></td>
