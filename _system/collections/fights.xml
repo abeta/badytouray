@@ -7,9 +7,10 @@
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
             <field name="result" type="list" default="" label="Result" description="" admintable="true">
                 <option value=""></option>
-                <option value="w">Win</option>
-                <option value="l">Lose</option>
-                <option value="d">Draw</option>
+                <option value="k">Won by K.O.</option>
+                <option value="w">Won</option>
+                <option value="l">Lost</option>
+                <option value="d">Drawn</option>
             </field>
         </fieldset>
         <fieldset name="tickets">
