@@ -78,3 +78,4 @@ baseurl: /
 paypal: lil_blak@hotmail.co.uk
 gems:
     - jekyll-sitemap
+cdn: //cdn.abemedia.co.uk/0x0/badytouray/

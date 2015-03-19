@@ -2,7 +2,7 @@
   <ul class="box-list box-list-xs">
     {% for item in sponsors %}
     <li><a title="{{ item.title }}" href="{{ item.website }}" target="_blank">
-      <div class="thumb-wide thumb-contain img" style="background-image: url(http://cdn.donlabs.com/432x0/badytouray/{{ item.image }})"></div>
+      <div class="thumb-wide thumb-contain img" style="background-image: url({{ page.image | prepend: (site.cdn | replace: '0x0', '432x0') }})"></div>
     </a>
     {% endfor %}
   </ul>

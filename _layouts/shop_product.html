@@ -5,10 +5,10 @@ layout: default
 <div class="section shop" id="shop" >
   <div class="container">
     <div class="row">
-      <div class="col-sm-4"><img src="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}"></div>
+      <div class="col-sm-4"><img src="{{ page.image | prepend: (site.cdn | replace: '0x0', '400x0') }}"></div>
       <div class="col-sm-8">
         <form class="simpleCart_shelfItem">
-          <input class="item_Image" type="hidden" value="http://cdn.donlabs.com/400x0/badytouray/{{ page.image }}">
+          <input class="item_Image" type="hidden" value="{{ page.image | prepend: (site.cdn | replace: '0x0', '400x0') }}">
           <h1 class="h2 media-heading item_name page-heading">{{ page.title }}</h1>
           <div class="h3 media-heading text-info item_price">£{{ page.price }}</div>
           <div>{{ content }}</div>
