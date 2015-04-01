@@ -14,7 +14,9 @@ layout: default
   {% else %}
      {% capture id %}{{ video[1] }}{% endcapture %}
   {% endif %}
-  {% if (next_fight.date | date: '%s') >= (site.time | date: '%s') %}
+  {% set now = (site.time | date: '%s') %}
+  {% set next = (next_fight.date | date: '%s') %}
+  {% if next >= now %}
   <div class="next_fight">
     <h3 class="text-info">Next Fight</h3>
     <h3 class="versus">
