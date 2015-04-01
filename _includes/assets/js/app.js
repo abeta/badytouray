@@ -177,7 +177,7 @@ $( ".donforms" ).on('submit', function( event ) {
     })
     .done(function(data) {
         if(data.status == 'error') {
-            toastr.error(data.message);
+            $form.prepend('<div class="alert alert-danger">' + data.message + '</div>');
         } else {
             $form[0].reset();
             $form.prepend('<div class="alert alert-success">Message sent successfully. We will be in touch shortly.</div>');
