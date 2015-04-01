@@ -4,7 +4,7 @@
   <div class="col-sm-4 col-md-3">
     <a class="thumb" href="{{ site.url }}{{ item.url }}" >
       <figure>
-        <div class="thumb-square img" style="background-image: url({{ page.image | prepend: (site.cdn | replace: '0x0', '263x0') }})"></div>
+        <div class="thumb-square img" style="background-image: url({{ item.image | prepend: (site.cdn | replace: '0x0', '263x0') }})"></div>
       </figure>
       <h3 class="text-center">{{ item.title }}</h3>
       <div class="h4 text-info text-center">&pound;{{ item.price }}</div>
