@@ -152,38 +152,40 @@ $('.box-list>li, .fullrow .row>*').each( function() {
 $('section, .box-list>li, .fullrow .row>*').smoove({offset: '10%'});
 
 */
-$( "#contactForm" ).submit(function( event ) {
+$( ".donforms" ).on('submit', function( event ) {
     event.preventDefault();
-    
     var $form = $(this),
         data = $form.serialize(),
-        action = $form.attr("action"),
+        data2 = $form.serializeArray(),
         $input = $form.find('input, select, textarea').prop('disabled', 1),
         $btn = $form.find('button').button('loading');
-    
-    var send = $.post(action, data)
-        .always(function() {
-            $input.prop('disabled', 0);
-            $btn.button('reset');
-            $form.find('.alert').remove();
-            if (typeof Recaptcha != "undefined") {
-                Recaptcha.reload();
-            }
-            $('html,body').animate({ scrollTop: $('#content').offset().top }, 1000);
-        })
-        .done(function(data) {
-            if(data.status == 'sent') {
-                $form[0].reset();
-                $form.prepend('<div class="alert alert-success">Message sent successfully. We will be in touch shortly.</div>');
-            } else {
-                $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
-                //$form.prepend('<div class="alert alert-danger">Error. Please check your entries and try again.</div>');
-                
-            }
-        })
-        .fail(function(data) {
-            $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
-        });
+        
+    $.ajax({
+        url: $form.attr("action"),
+        type: 'post',
+        data: data,
+        accepts: {
+            json: 'application/json'
+        },
+    }).always(function(data) {
+        $input.prop('disabled', 0);
+        $btn.button('reset');
+        if (typeof Recaptcha != "undefined") {
+            Recaptcha.reload();
+        }
+        $('html,body').animate({ scrollTop: $form.offset().top }, 1000);
+    })
+    .done(function(data) {
+        if(data.status == 'error') {
+            toastr.error(data.message);
+        } else {
+            $form[0].reset();
+            $form.prepend('<div class="alert alert-success">Message sent successfully. We will be in touch shortly.</div>');
+        }
+    })
+    .fail(function(data) {
+        $form.prepend('<div class="alert alert-danger">' + data.message + '</div>');
+    });
 });
 
 $('#ticket_name').on('change', function() {

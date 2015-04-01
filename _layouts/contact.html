@@ -5,7 +5,7 @@ layout: default
 <div class="section grey" id="content">
   <div class="container">
     <p class="lead">Get in touch if you have any questions.</p>
-    <form role="form" action="https://mailer.abemedia.co.uk" method="post" id="contactForm">
+    <form role="form" action="https://send.abemedia.co.uk/eb" method="post" class="donforms">
       <div class="row">
         <div class="col-sm-8">
           <div class="row">
@@ -35,23 +35,7 @@ layout: default
             <textarea name="message" rows="5" class="form-control" required></textarea>
           </div>
           <div class="form-group">
-              <script type="text/javascript"
-                 src="//www.google.com/recaptcha/api/challenge?k={{ site.recaptcha_public_key }}">
-              </script>
-              <noscript>
-                 <iframe src="//www.google.com/recaptcha/api/noscript?k={{ site.recaptcha_public_key }}"
-                     height="300" width="500" frameborder="0"></iframe><br>
-                 <textarea name="recaptcha_challenge_field" rows="3" cols="40">
-                 </textarea>
-                 <input type="hidden" name="recaptcha_response_field"
-                     value="manual_challenge" required>
-              </noscript>
-          </div>
-          <div class="form-group">
             <button type="submit" class="btn btn-danger btn-lg">Send Enquiry</button>
-            <input type="hidden" name="to" value="info@badytouray.com">
-            <input type='hidden' name='redirect_to' value='{{ site.url }}{{ page.url }}#sent' />
-            <input type='hidden' name='form_id' value='badytouray' />
           </div>
         </div>
       </div>
