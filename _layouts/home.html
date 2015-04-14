@@ -60,12 +60,11 @@ layout: default
       <div class="form-group">
         <label for="quantity" class="col-sm-4 control-label">Ticket Type</label>
         <div class="col-sm-7">
+        
           <select id="ticket_name" name="amount" class="form-control">
             {% for ticket in next_fight.tickets %}
-            {% if ticket[1] %}{% assign ticket = ticket[1] %}{% endif %}
-            {% if ticket.price %}
-            <option value="{{ ticket.price }}">{{ ticket.name }} (&pound;{{ ticket.price }})</option>
-            {% endif %}
+            {% if ticket[1] %}{% assign item = ticket[1] %}{% else %}{% assign item = ticket %}{% endif %}
+            {% if item.price %}<option value="{{ item.price }}">{{ item.name }} (&pound;{{ item.price }})</option>{% endif %}
             {% endfor %}
           </select>
         </div>
