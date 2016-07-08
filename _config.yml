@@ -69,7 +69,6 @@ collections:
         output: true
         permalink: 'shop/:path.html'
 description: 'Bady "Terminator" Touray'
-relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
     provider: '1'
