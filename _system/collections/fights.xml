@@ -14,7 +14,7 @@
             </field>
         </fieldset>
         <fieldset name="tickets">
-            <field name="tickets" type="multiform" label="Tickets" filter="array" default="[{'ticket': 'Standard Ticket'}, {'ticket': 'VIP Ticket'}, {'ticket': 'Ringside Ticket'}]">
+            <field name="tickets" type="multiform" label="Tickets" filter="array" default="[{\"ticket\": \"Standard Ticket\"}, {\"ticket\": \"VIP Ticket\"}, {\"ticket\": \"Ringside Ticket\"}]">
                 <field name="name" type="text" label="Ticket Name" filter="string" class="form-control" />
                 <field name="price" type="text" label="Ticket Price" filter="float" class="form-control" />
             </field>
